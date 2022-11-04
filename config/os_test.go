@@ -663,6 +663,22 @@ func TestEOL_IsStandardSupportEnded(t *testing.T) {
 			extEnded: false,
 			found:    true,
 		},
+		{
+			name:     "NixOS 22.11 EOL",
+			fields:   fields{family: NixOS, release: "22.11"},
+			now:      time.Date(2023, 6, 4, 23, 59, 59, 0, time.UTC),
+			stdEnded: true,
+			extEnded: true,
+			found:    true,
+		},
+		{
+			name:     "NixOS 23.05 supported",
+			fields:   fields{family: NixOS, release: "22.11"},
+			now:      time.Date(2023, 6, 4, 23, 59, 59, 0, time.UTC),
+			stdEnded: false,
+			extEnded: false,
+			found:    true,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

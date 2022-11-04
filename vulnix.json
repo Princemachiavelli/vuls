@@ -1,0 +1,2166 @@
+[
+ {
+  "name": "Nuget-5.6.0.6489",
+  "pname": "Nuget",
+  "version": "5.6.0.6489",
+  "derivation": "/nix/store/lhn0ziasnffvlcqnmsk3jdnqfvpy8rwg-Nuget-5.6.0.6489.drv",
+  "affected_by": [
+   "CVE-2022-30184"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-30184": 5.5
+  },
+  "description": {
+   "CVE-2022-30184": ".NET and Visual Studio Information Disclosure Vulnerability."
+  }
+ },
+ {
+  "name": "SDL_ttf-2.0.11",
+  "pname": "SDL_ttf",
+  "version": "2.0.11",
+  "derivation": "/nix/store/y2pzzzp4qyhsm3rkhww1mbchm2641p1c-SDL_ttf-2.0.11.drv",
+  "affected_by": [
+   "CVE-2022-27470"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-27470": 7.8
+  },
+  "description": {
+   "CVE-2022-27470": "SDL_ttf v2.0.18 and below was discovered to contain an arbitrary memory write via the function TTF_RenderText_Solid(). This vulnerability is triggered via a crafted TTF file."
+  }
+ },
+ {
+  "name": "async-2.2.4",
+  "pname": "async",
+  "version": "2.2.4",
+  "derivation": "/nix/store/c9za91hskj95jcwapl71s0w65060mj35-async-2.2.4.drv",
+  "affected_by": [
+   "CVE-2021-43138"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-43138": 7.8
+  },
+  "description": {
+   "CVE-2021-43138": "In Async before 2.6.4 and 3.x before 3.2.2, a malicious user can obtain privileges via the mapValues() method, aka lib/internal/iterator.js createObjectIterator prototype pollution."
+  }
+ },
+ {
+  "name": "async-2.2.4-r2.cabal",
+  "pname": "async",
+  "version": "2.2.4-r2.cabal",
+  "derivation": "/nix/store/zfxdzr8lnfdnq4iad3lz1h8hz6dcbjqi-async-2.2.4-r2.cabal.drv",
+  "affected_by": [
+   "CVE-2021-43138"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-43138": 7.8
+  },
+  "description": {
+   "CVE-2021-43138": "In Async before 2.6.4 and 3.x before 3.2.2, a malicious user can obtain privileges via the mapValues() method, aka lib/internal/iterator.js createObjectIterator prototype pollution."
+  }
+ },
+ {
+  "name": "avahi-0.8",
+  "pname": "avahi",
+  "version": "0.8",
+  "derivation": "/nix/store/01rak82abggcc7kwzjwr50z1qhd3q3p9-avahi-0.8.drv",
+  "affected_by": [
+   "CVE-2021-26720",
+   "CVE-2021-3468"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-3468": 5.5,
+   "CVE-2021-26720": 7.8
+  },
+  "description": {
+   "CVE-2021-3468": "A flaw was found in avahi in versions 0.6 up to 0.8. The event used to signal the termination of the client connection on the avahi Unix socket is not correctly handled in the client_work function, allowing a local attacker to trigger an infinite loop. The highest threat from this vulnerability is to the availability of the avahi service, which becomes unresponsive after this flaw is triggered.",
+   "CVE-2021-26720": "avahi-daemon-check-dns.sh in the Debian avahi package through 0.8-4 is executed as root via /etc/network/if-up.d/avahi-daemon, and allows a local attacker to cause a denial of service or create arbitrary empty files via a symlink attack on files under /run/avahi-daemon. NOTE: this only affects the packaging for Debian GNU/Linux (used indirectly by SUSE), not the upstream Avahi product."
+  }
+ },
+ {
+  "name": "avahi-0.8",
+  "pname": "avahi",
+  "version": "0.8",
+  "derivation": "/nix/store/87pdrpbs2k2dg84n1rn6mpg28n86sh99-avahi-0.8.drv",
+  "affected_by": [
+   "CVE-2021-26720",
+   "CVE-2021-3468"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-3468": 5.5,
+   "CVE-2021-26720": 7.8
+  },
+  "description": {
+   "CVE-2021-3468": "A flaw was found in avahi in versions 0.6 up to 0.8. The event used to signal the termination of the client connection on the avahi Unix socket is not correctly handled in the client_work function, allowing a local attacker to trigger an infinite loop. The highest threat from this vulnerability is to the availability of the avahi service, which becomes unresponsive after this flaw is triggered.",
+   "CVE-2021-26720": "avahi-daemon-check-dns.sh in the Debian avahi package through 0.8-4 is executed as root via /etc/network/if-up.d/avahi-daemon, and allows a local attacker to cause a denial of service or create arbitrary empty files via a symlink attack on files under /run/avahi-daemon. NOTE: this only affects the packaging for Debian GNU/Linux (used indirectly by SUSE), not the upstream Avahi product."
+  }
+ },
+ {
+  "name": "bind-9.18.8",
+  "pname": "bind",
+  "version": "9.18.8",
+  "derivation": "/nix/store/xw08sk0l8cngvbjj1s436jg65rcp6l9n-bind-9.18.8.drv",
+  "affected_by": [
+   "CVE-2019-6470"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2019-6470": 7.5
+  },
+  "description": {
+   "CVE-2019-6470": "There had existed in one of the ISC BIND libraries a bug in a function that was used by dhcpd when operating in DHCPv6 mode. There was also a bug in dhcpd relating to the use of this function per its documentation, but the bug in the library function prevented this from causing any harm. All releases of dhcpd from ISC contain copies of this, and other, BIND libraries in combinations that have been tested prior to release and are known to not present issues like this. Some third-party packagers of ISC software have modified the dhcpd source, BIND source, or version matchup in ways that create the crash potential. Based on reports available to ISC, the crash probability is large and no analysis has been done on how, or even if, the probability can be manipulated by an attacker. Affects: Builds of dhcpd versions prior to version 4.4.1 when using BIND versions 9.11.2 or later, or BIND versions with specific bug fixes backported to them. ISC does not have access to comprehensive version lists for all repackagings of dhcpd that are vulnerable. In particular, builds from other vendors may also be affected. Operators are advised to consult their vendor documentation."
+  }
+ },
+ {
+  "name": "binutils-2.38",
+  "pname": "binutils",
+  "version": "2.38",
+  "derivation": "/nix/store/j2iwn26ri7r2cifj21bcydk1dnrknflk-binutils-2.38.drv",
+  "affected_by": [
+   "CVE-2022-38126",
+   "CVE-2022-38127",
+   "CVE-2022-38128",
+   "CVE-2022-38533"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-38127": 5.5,
+   "CVE-2022-38128": 5.5,
+   "CVE-2022-38533": 5.5,
+   "CVE-2022-38126": 5.5
+  },
+  "description": {
+   "CVE-2022-38127": "A NULL pointer dereference in the read_and_display_attr_value() function in binutils/dwarf.c may lead to program crash when parsing corrupt DWARF data.",
+   "CVE-2022-38128": "An infinite loop may be triggered in display_debug_abbrev() function in binutils/dwarf.c while opening a crafted ELF, which may lead to denial of service by a local attacker.",
+   "CVE-2022-38533": "In GNU Binutils before 2.40, there is a heap-buffer-overflow in the error function bfd_getl32 when called from the strip_main function in strip-new via a crafted file.",
+   "CVE-2022-38126": "Assertion fail in the display_debug_names() function in binutils/dwarf.c may lead to program crash and denial of service."
+  }
+ },
+ {
+  "name": "binutils-2.38",
+  "pname": "binutils",
+  "version": "2.38",
+  "derivation": "/nix/store/ximx0zxfpivfqsjp20a9zxbmxgih8ghc-binutils-2.38.drv",
+  "affected_by": [
+   "CVE-2022-38126",
+   "CVE-2022-38127",
+   "CVE-2022-38128",
+   "CVE-2022-38533"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-38127": 5.5,
+   "CVE-2022-38128": 5.5,
+   "CVE-2022-38533": 5.5,
+   "CVE-2022-38126": 5.5
+  },
+  "description": {
+   "CVE-2022-38127": "A NULL pointer dereference in the read_and_display_attr_value() function in binutils/dwarf.c may lead to program crash when parsing corrupt DWARF data.",
+   "CVE-2022-38128": "An infinite loop may be triggered in display_debug_abbrev() function in binutils/dwarf.c while opening a crafted ELF, which may lead to denial of service by a local attacker.",
+   "CVE-2022-38533": "In GNU Binutils before 2.40, there is a heap-buffer-overflow in the error function bfd_getl32 when called from the strip_main function in strip-new via a crafted file.",
+   "CVE-2022-38126": "Assertion fail in the display_debug_names() function in binutils/dwarf.c may lead to program crash and denial of service."
+  }
+ },
+ {
+  "name": "binutils-2.39",
+  "pname": "binutils",
+  "version": "2.39",
+  "derivation": "/nix/store/rrw14mgmyzk37ck8w8d9i1v3fgx8q8a3-binutils-2.39.drv",
+  "affected_by": [
+   "CVE-2022-38128",
+   "CVE-2022-38533"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-38128": 5.5,
+   "CVE-2022-38533": 5.5
+  },
+  "description": {
+   "CVE-2022-38128": "An infinite loop may be triggered in display_debug_abbrev() function in binutils/dwarf.c while opening a crafted ELF, which may lead to denial of service by a local attacker.",
+   "CVE-2022-38533": "In GNU Binutils before 2.40, there is a heap-buffer-overflow in the error function bfd_getl32 when called from the strip_main function in strip-new via a crafted file."
+  }
+ },
+ {
+  "name": "binutils-2.39",
+  "pname": "binutils",
+  "version": "2.39",
+  "derivation": "/nix/store/p2l4l2zsivp1bg1fxva3ars7y09lgy3p-binutils-2.39.drv",
+  "affected_by": [
+   "CVE-2022-38128",
+   "CVE-2022-38533"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-38128": 5.5,
+   "CVE-2022-38533": 5.5
+  },
+  "description": {
+   "CVE-2022-38128": "An infinite loop may be triggered in display_debug_abbrev() function in binutils/dwarf.c while opening a crafted ELF, which may lead to denial of service by a local attacker.",
+   "CVE-2022-38533": "In GNU Binutils before 2.40, there is a heap-buffer-overflow in the error function bfd_getl32 when called from the strip_main function in strip-new via a crafted file."
+  }
+ },
+ {
+  "name": "bolt-0.9.2",
+  "pname": "bolt",
+  "version": "0.9.2",
+  "derivation": "/nix/store/fhsv7kw2bp6d63pb31dm89brdvqv1b50-bolt-0.9.2.drv",
+  "affected_by": [
+   "CVE-2017-16754",
+   "CVE-2019-15483",
+   "CVE-2019-15484",
+   "CVE-2019-15485",
+   "CVE-2019-9185",
+   "CVE-2020-28925",
+   "CVE-2020-4040",
+   "CVE-2020-4041",
+   "CVE-2021-27367",
+   "CVE-2022-31321"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2017-16754": 5.3,
+   "CVE-2019-9185": 8.8,
+   "CVE-2020-4040": 4.3,
+   "CVE-2019-15484": 6.1,
+   "CVE-2020-4041": 6.1,
+   "CVE-2019-15485": 6.1,
+   "CVE-2021-27367": 7.5,
+   "CVE-2020-28925": 5.3,
+   "CVE-2019-15483": 6.1,
+   "CVE-2022-31321": 9.1
+  },
+  "description": {
+   "CVE-2017-16754": "Bolt before 3.3.6 does not properly restrict access to _profiler routes, related to EventListener/ProfilerListener.php and Provider/EventListenerServiceProvider.php.",
+   "CVE-2019-9185": "Controller/Async/FilesystemManager.php in the filemanager in Bolt before 3.6.5 allows remote attackers to execute arbitrary PHP code by renaming a previously uploaded file to have a .php extension.",
+   "CVE-2020-4040": "Bolt CMS before version 3.7.1 lacked CSRF protection in the preview generating endpoint. Previews are intended to be generated by the admins, developers, chief-editors, and editors, who are authorized to create content in the application. But due to lack of proper CSRF protection, unauthorized users could generate a preview. This has been fixed in Bolt 3.7.1",
+   "CVE-2019-15484": "Bolt before 3.6.10 has XSS via an image's alt or title field.",
+   "CVE-2020-4041": "In Bolt CMS before version 3.7.1, the filename of uploaded files was vulnerable to stored XSS. It is not possible to inject javascript code in the file name when creating/uploading the file. But, once created/uploaded, it can be renamed to inject the payload in it. Additionally, the measures to prevent renaming the file to disallowed filename extensions could be circumvented. This is fixed in Bolt 3.7.1.",
+   "CVE-2019-15485": "Bolt before 3.6.10 has XSS via createFolder or createFile in Controller/Async/FilesystemManager.php.",
+   "CVE-2021-27367": "Controller/Backend/FileEditController.php and Controller/Backend/FilemanagerController.php in Bolt before 4.1.13 allow Directory Traversal.",
+   "CVE-2020-28925": "Bolt before 3.7.2 does not restrict filter options in a Request in the Twig context, and is therefore inconsistent with the \"How to Harden Your PHP for Better Security\" guidance.",
+   "CVE-2019-15483": "Bolt before 3.6.10 has XSS via a title that is mishandled in the system log.",
+   "CVE-2022-31321": "The foldername parameter in Bolt 5.1.7 was discovered to have incorrect input validation, allowing attackers to perform directory enumeration or cause a Denial of Service (DoS) via a crafted input."
+  }
+ },
+ {
+  "name": "cairo-1.16.0",
+  "pname": "cairo",
+  "version": "1.16.0",
+  "derivation": "/nix/store/nj34cjsz0xw9bg59v8mhl5b8q9bz5q23-cairo-1.16.0.drv",
+  "affected_by": [
+   "CVE-2019-6461",
+   "CVE-2019-6462"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2019-6462": 6.5,
+   "CVE-2019-6461": 6.5
+  },
+  "description": {
+   "CVE-2019-6462": "An issue was discovered in cairo 1.16.0. There is an infinite loop in the function _arc_error_normalized in the file cairo-arc.c, related to _arc_max_angle_for_tolerance_normalized.",
+   "CVE-2019-6461": "An issue was discovered in cairo 1.16.0. There is an assertion problem in the function _cairo_arc_in_direction in the file cairo-arc.c."
+  }
+ },
+ {
+  "name": "cairo-1.16.0",
+  "pname": "cairo",
+  "version": "1.16.0",
+  "derivation": "/nix/store/d7wvxyd6g1swjmrqvd8pkk82pfky0c64-cairo-1.16.0.drv",
+  "affected_by": [
+   "CVE-2019-6461",
+   "CVE-2019-6462"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2019-6462": 6.5,
+   "CVE-2019-6461": 6.5
+  },
+  "description": {
+   "CVE-2019-6462": "An issue was discovered in cairo 1.16.0. There is an infinite loop in the function _arc_error_normalized in the file cairo-arc.c, related to _arc_max_angle_for_tolerance_normalized.",
+   "CVE-2019-6461": "An issue was discovered in cairo 1.16.0. There is an assertion problem in the function _cairo_arc_in_direction in the file cairo-arc.c."
+  }
+ },
+ {
+  "name": "cereal-0.5.8.3",
+  "pname": "cereal",
+  "version": "0.5.8.3",
+  "derivation": "/nix/store/jkj9cmihcdq8pgf1a59768f977cahi3y-cereal-0.5.8.3.drv",
+  "affected_by": [
+   "CVE-2020-11104",
+   "CVE-2020-11105"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2020-11104": 5.3,
+   "CVE-2020-11105": 9.8
+  },
+  "description": {
+   "CVE-2020-11104": "An issue was discovered in USC iLab cereal through 1.3.0. Serialization of an (initialized) C/C++ long double variable into a BinaryArchive or PortableBinaryArchive leaks several bytes of stack or heap memory, from which sensitive information (such as memory layout or private keys) can be gleaned if the archive is distributed outside of a trusted context.",
+   "CVE-2020-11105": "An issue was discovered in USC iLab cereal through 1.3.0. It employs caching of std::shared_ptr values, using the raw pointer address as a unique identifier. This becomes problematic if an std::shared_ptr variable goes out of scope and is freed, and a new std::shared_ptr is allocated at the same address. Serialization fidelity thereby becomes dependent upon memory layout. In short, serialized std::shared_ptr variables cannot always be expected to serialize back into their original values. This can have any number of consequences, depending on the context within which this manifests."
+  }
+ },
+ {
+  "name": "charset-0.3.9",
+  "pname": "charset",
+  "version": "0.3.9",
+  "derivation": "/nix/store/a2yi3dr242p9cb1c6gq6ikfq2ws233hc-charset-0.3.9.drv",
+  "affected_by": [
+   "CVE-2017-16098"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2017-16098": 7.5
+  },
+  "description": {
+   "CVE-2017-16098": "charset 1.0.0 and below are vulnerable to regular expression denial of service. Input of around 50k characters is required for a slow down of around 2 seconds. Unless node was compiled using the -DHTTP_MAX_HEADER_SIZE= option the default header max length is 80kb, so the impact of the ReDoS is relatively low."
+  }
+ },
+ {
+  "name": "commonmark-0.2.2",
+  "pname": "commonmark",
+  "version": "0.2.2",
+  "derivation": "/nix/store/agl868nardcyv0lwj2b9ly1w50hrgsxa-commonmark-0.2.2.drv",
+  "affected_by": [
+   "CVE-2019-10010"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2019-10010": 6.1
+  },
+  "description": {
+   "CVE-2019-10010": "Cross-site scripting (XSS) vulnerability in the PHP League CommonMark library before 0.18.3 allows remote attackers to insert unsafe links into HTML by using double-encoded HTML entities that are not properly escaped during rendering, a different vulnerability than CVE-2018-20583."
+  }
+ },
+ {
+  "name": "cookie-0.4.5",
+  "pname": "cookie",
+  "version": "0.4.5",
+  "derivation": "/nix/store/hywa1xgw4z3ldc7klidk1yrb1f5w30dk-cookie-0.4.5.drv",
+  "affected_by": [
+   "CVE-2017-18589"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2017-18589": 7.5
+  },
+  "description": {
+   "CVE-2017-18589": "An issue was discovered in the cookie crate before 0.7.6 for Rust. Large integers in the Max-Age of a cookie cause a panic."
+  }
+ },
+ {
+  "name": "cups-2.4.2",
+  "pname": "cups",
+  "version": "2.4.2",
+  "derivation": "/nix/store/3jrp3kan7fbixx324dvsi1c1qzlcdwlz-cups-2.4.2.drv",
+  "affected_by": [
+   "CVE-2022-26691"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-26691": 6.7
+  },
+  "description": {
+   "CVE-2022-26691": "A logic issue was addressed with improved state management. This issue is fixed in Security Update 2022-003 Catalina, macOS Monterey 12.3, macOS Big Sur 11.6.5. An application may be able to gain elevated privileges."
+  }
+ },
+ {
+  "name": "curl-7.83.1",
+  "pname": "curl",
+  "version": "7.83.1",
+  "derivation": "/nix/store/8m2x8d26gx9ghjfb6jd7zz30c6wclq40-curl-7.83.1.drv",
+  "affected_by": [
+   "CVE-2022-35252",
+   "CVE-2022-42915",
+   "CVE-2022-42916"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-42916": 7.5,
+   "CVE-2022-42915": 9.8,
+   "CVE-2022-35252": 3.7
+  },
+  "description": {
+   "CVE-2022-42916": "In curl before 7.86.0, the HSTS check could be bypassed to trick it into staying with HTTP. Using its HSTS support, curl can be instructed to use HTTPS directly (instead of using an insecure cleartext HTTP step) even when HTTP is provided in the URL. This mechanism could be bypassed if the host name in the given URL uses IDN characters that get replaced with ASCII counterparts as part of the IDN conversion, e.g., using the character UTF-8 U+3002 (IDEOGRAPHIC FULL STOP) instead of the common ASCII full stop of U+002E (.). The earliest affected version is 7.77.0 2021-05-26.",
+   "CVE-2022-42915": "curl before 7.86.0 has a double free. If curl is told to use an HTTP proxy for a transfer with a non-HTTP(S) URL, it sets up the connection to the remote server by issuing a CONNECT request to the proxy, and then tunnels the rest of the protocol through. An HTTP proxy might refuse this request (HTTP proxies often only allow outgoing connections to specific port numbers, like 443 for HTTPS) and instead return a non-200 status code to the client. Due to flaws in the error/cleanup handling, this could trigger a double free in curl if one of the following schemes were used in the URL for the transfer: dict, gopher, gophers, ldap, ldaps, rtmp, rtmps, or telnet. The earliest affected version is 7.77.0.",
+   "CVE-2022-35252": "When curl is used to retrieve and parse cookies from a HTTP(S) server, itaccepts cookies using control codes that when later are sent back to a HTTPserver might make the server return 400 responses. Effectively allowing a\"sister site\" to deny service to all siblings."
+  }
+ },
+ {
+  "name": "curl-7.85.0",
+  "pname": "curl",
+  "version": "7.85.0",
+  "derivation": "/nix/store/hfvz9qjlrva38m9lkkh3bhgn14110d7n-curl-7.85.0.drv",
+  "affected_by": [
+   "CVE-2022-42915",
+   "CVE-2022-42916"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-42916": 7.5,
+   "CVE-2022-42915": 9.8
+  },
+  "description": {
+   "CVE-2022-42916": "In curl before 7.86.0, the HSTS check could be bypassed to trick it into staying with HTTP. Using its HSTS support, curl can be instructed to use HTTPS directly (instead of using an insecure cleartext HTTP step) even when HTTP is provided in the URL. This mechanism could be bypassed if the host name in the given URL uses IDN characters that get replaced with ASCII counterparts as part of the IDN conversion, e.g., using the character UTF-8 U+3002 (IDEOGRAPHIC FULL STOP) instead of the common ASCII full stop of U+002E (.). The earliest affected version is 7.77.0 2021-05-26.",
+   "CVE-2022-42915": "curl before 7.86.0 has a double free. If curl is told to use an HTTP proxy for a transfer with a non-HTTP(S) URL, it sets up the connection to the remote server by issuing a CONNECT request to the proxy, and then tunnels the rest of the protocol through. An HTTP proxy might refuse this request (HTTP proxies often only allow outgoing connections to specific port numbers, like 443 for HTTPS) and instead return a non-200 status code to the client. Due to flaws in the error/cleanup handling, this could trigger a double free in curl if one of the following schemes were used in the URL for the transfer: dict, gopher, gophers, ldap, ldaps, rtmp, rtmps, or telnet. The earliest affected version is 7.77.0."
+  }
+ },
+ {
+  "name": "dbus-1",
+  "pname": "dbus",
+  "version": "1",
+  "derivation": "/nix/store/2xkbiccarfnrrhrxmcx39vaw6cd8s2m7-dbus-1.drv",
+  "affected_by": [
+   "CVE-2019-12749"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2019-12749": 7.1
+  },
+  "description": {
+   "CVE-2019-12749": "dbus before 1.10.28, 1.12.x before 1.12.16, and 1.13.x before 1.13.12, as used in DBusServer in Canonical Upstart in Ubuntu 14.04 (and in some, less common, uses of dbus-daemon), allows cookie spoofing because of symlink mishandling in the reference implementation of DBUS_COOKIE_SHA1 in the libdbus library. (This only affects the DBUS_COOKIE_SHA1 authentication mechanism.) A malicious client with write access to its own home directory could manipulate a ~/.dbus-keyrings symlink to cause a DBusServer with a different uid to read and write in unintended locations. In the worst case, this could result in the DBusServer reusing a cookie that is known to the malicious client, and treating that cookie as evidence that a subsequent client connection came from an attacker-chosen uid, allowing authentication bypass."
+  }
+ },
+ {
+  "name": "djvulibre-3.5.28",
+  "pname": "djvulibre",
+  "version": "3.5.28",
+  "derivation": "/nix/store/swm5kv3w8sdpzdzqf0l8fr3lgvq48wpz-djvulibre-3.5.28.drv",
+  "affected_by": [
+   "CVE-2021-32490",
+   "CVE-2021-32491",
+   "CVE-2021-32492",
+   "CVE-2021-32493",
+   "CVE-2021-3500"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-32493": 7.8,
+   "CVE-2021-3500": 7.8,
+   "CVE-2021-32491": 7.8,
+   "CVE-2021-32492": 7.8,
+   "CVE-2021-32490": 7.8
+  },
+  "description": {
+   "CVE-2021-32493": "A flaw was found in djvulibre-3.5.28 and earlier. A heap buffer overflow in function DJVU::GBitmap::decode() via crafted djvu file may lead to application crash and other consequences.",
+   "CVE-2021-3500": "A flaw was found in djvulibre-3.5.28 and earlier. A Stack overflow in function DJVU::DjVuDocument::get_djvu_file() via crafted djvu file may lead to application crash and other consequences.",
+   "CVE-2021-32491": "A flaw was found in djvulibre-3.5.28 and earlier. An integer overflow in function render() in tools/ddjvu via crafted djvu file may lead to application crash and other consequences.",
+   "CVE-2021-32492": "A flaw was found in djvulibre-3.5.28 and earlier. An out of bounds read in function DJVU::DataPool::has_data() via crafted djvu file may lead to application crash and other consequences.",
+   "CVE-2021-32490": "A flaw was found in djvulibre-3.5.28 and earlier. An out of bounds write in function DJVU::filter_bv() via crafted djvu file may lead to application crash and other consequences."
+  }
+ },
+ {
+  "name": "dpkg-1.21.1ubuntu2.1",
+  "pname": "dpkg",
+  "version": "1.21.1ubuntu2.1",
+  "derivation": "/nix/store/7wzmwra50cdlsvxyv3m5n30y9a21q8ck-dpkg-1.21.1ubuntu2.1.drv",
+  "affected_by": [
+   "CVE-2022-1664"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-1664": 9.8
+  },
+  "description": {
+   "CVE-2022-1664": "Dpkg::Source::Archive in dpkg, the Debian package management system, before version 1.21.8, 1.20.10, 1.19.8, 1.18.26 is prone to a directory traversal vulnerability. When extracting untrusted source packages in v2 and v3 source package formats that include a debian.tar, the in-place extraction can lead to directory traversal situations on specially crafted orig.tar and debian.tar tarballs."
+  }
+ },
+ {
+  "name": "exfat-1.3.0",
+  "pname": "exfat",
+  "version": "1.3.0",
+  "derivation": "/nix/store/dv9nxbj615vkq7b4gwgb55ndkwmyf14v-exfat-1.3.0.drv",
+  "affected_by": [
+   "CVE-2022-29973"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-29973": 4.7
+  },
+  "description": {
+   "CVE-2022-29973": "relan exFAT 1.3.0 allows local users to obtain sensitive information (data from deleted files in the filesystem) in certain situations involving offsets beyond ValidDataLength."
+  }
+ },
+ {
+  "name": "faad2-2.10.0",
+  "pname": "faad2",
+  "version": "2.10.0",
+  "derivation": "/nix/store/gjlnrj9p3vg2h1mm5xp2mc8sjvh6ipsz-faad2-2.10.0.drv",
+  "affected_by": [
+   "CVE-2021-32273",
+   "CVE-2021-32274",
+   "CVE-2021-32276",
+   "CVE-2021-32277",
+   "CVE-2021-32278"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-32274": 7.8,
+   "CVE-2021-32278": 7.8,
+   "CVE-2021-32273": 7.8,
+   "CVE-2021-32277": 7.8,
+   "CVE-2021-32276": 5.5
+  },
+  "description": {
+   "CVE-2021-32274": "An issue was discovered in faad2 through 2.10.0. A heap-buffer-overflow exists in the function sbr_qmf_synthesis_64 located in sbr_qmf.c. It allows an attacker to cause code Execution.",
+   "CVE-2021-32278": "An issue was discovered in faad2 through 2.10.0. A heap-buffer-overflow exists in the function lt_prediction located in lt_predict.c. It allows an attacker to cause code Execution.",
+   "CVE-2021-32273": "An issue was discovered in faad2 through 2.10.0. A stack-buffer-overflow exists in the function ftypin located in mp4read.c. It allows an attacker to cause Code Execution.",
+   "CVE-2021-32277": "An issue was discovered in faad2 through 2.10.0. A heap-buffer-overflow exists in the function sbr_qmf_analysis_32 located in sbr_qmf.c. It allows an attacker to cause code Execution.",
+   "CVE-2021-32276": "An issue was discovered in faad2 through 2.10.0. A NULL pointer dereference exists in the function get_sample() located in output.c. It allows an attacker to cause Denial of Service."
+  }
+ },
+ {
+  "name": "ffmpeg-4.4.2",
+  "pname": "ffmpeg",
+  "version": "4.4.2",
+  "derivation": "/nix/store/njadc08lq4kgh6f3n9r3almsfz75wkax-ffmpeg-4.4.2.drv",
+  "affected_by": [
+   "CVE-2021-38291"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-38291": 7.5
+  },
+  "description": {
+   "CVE-2021-38291": "FFmpeg version (git commit de8e6e67e7523e48bb27ac224a0b446df05e1640) suffers from a an assertion failure at src/libavutil/mathematics.c."
+  }
+ },
+ {
+  "name": "ffmpeg-4.4.2",
+  "pname": "ffmpeg",
+  "version": "4.4.2",
+  "derivation": "/nix/store/g4770zjz88q6h07w9xpymfkm77niz05k-ffmpeg-4.4.2.drv",
+  "affected_by": [
+   "CVE-2021-38291"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-38291": 7.5
+  },
+  "description": {
+   "CVE-2021-38291": "FFmpeg version (git commit de8e6e67e7523e48bb27ac224a0b446df05e1640) suffers from a an assertion failure at src/libavutil/mathematics.c."
+  }
+ },
+ {
+  "name": "flex-2.6.4",
+  "pname": "flex",
+  "version": "2.6.4",
+  "derivation": "/nix/store/385rkxgrdd5kmyjaxqrks37awcfx2lmi-flex-2.6.4.drv",
+  "affected_by": [
+   "CVE-2019-6293"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2019-6293": 5.5
+  },
+  "description": {
+   "CVE-2019-6293": "An issue was discovered in the function mark_beginning_as_normal in nfa.c in flex 2.6.4. There is a stack exhaustion problem caused by the mark_beginning_as_normal function making recursive calls to itself in certain scenarios involving lots of '*' characters. Remote attackers could leverage this vulnerability to cause a denial-of-service."
+  }
+ },
+ {
+  "name": "fuse-2.9.9",
+  "pname": "fuse",
+  "version": "2.9.9",
+  "derivation": "/nix/store/5ig82v28nh4blfmkc9vqvx3l1fim99q3-fuse-2.9.9.drv",
+  "affected_by": [
+   "CVE-2019-14860",
+   "CVE-2019-14900"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2019-14860": 6.5,
+   "CVE-2019-14900": 6.5
+  },
+  "description": {
+   "CVE-2019-14860": "It was found that the Syndesis configuration for Cross-Origin Resource Sharing was set to allow all origins. An attacker could use this lack of protection to conduct phishing attacks and further access unauthorized information.",
+   "CVE-2019-14900": "A flaw was found in Hibernate ORM in versions before 5.3.18, 5.4.18 and 5.5.0.Beta1. A SQL injection in the implementation of the JPA Criteria API can permit unsanitized literals when a literal is used in the SELECT or GROUP BY parts of the query. This flaw could allow an attacker to access unauthorized information or possibly conduct further attacks."
+  }
+ },
+ {
+  "name": "fuse-2.9.9-closefrom-glibc-2-34.patch?id=8a970396fca7aca2d5a761b8e7a8242f1eef14c9",
+  "pname": "fuse",
+  "version": "2.9.9-closefrom-glibc-2-34.patch?id=8a970396fca7aca2d5a761b8e7a8242f1eef14c9",
+  "derivation": "/nix/store/k8w1z83bdh4pvr0b7v4rx52zqpn42nsi-fuse-2.9.9-closefrom-glibc-2-34.patch?id=8a970396fca7aca2d5a761b8e7a8242f1eef14c9.drv",
+  "affected_by": [
+   "CVE-2019-14860",
+   "CVE-2019-14900"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2019-14860": 6.5,
+   "CVE-2019-14900": 6.5
+  },
+  "description": {
+   "CVE-2019-14860": "It was found that the Syndesis configuration for Cross-Origin Resource Sharing was set to allow all origins. An attacker could use this lack of protection to conduct phishing attacks and further access unauthorized information.",
+   "CVE-2019-14900": "A flaw was found in Hibernate ORM in versions before 5.3.18, 5.4.18 and 5.5.0.Beta1. A SQL injection in the implementation of the JPA Criteria API can permit unsanitized literals when a literal is used in the SELECT or GROUP BY parts of the query. This flaw could allow an attacker to access unauthorized information or possibly conduct further attacks."
+  }
+ },
+ {
+  "name": "fuse-3.10.5",
+  "pname": "fuse",
+  "version": "3.10.5",
+  "derivation": "/nix/store/yb7y6rrb0qpy2h4n1kv46w1q4w6z9kbd-fuse-3.10.5.drv",
+  "affected_by": [
+   "CVE-2019-14860",
+   "CVE-2019-14900"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2019-14860": 6.5,
+   "CVE-2019-14900": 6.5
+  },
+  "description": {
+   "CVE-2019-14860": "It was found that the Syndesis configuration for Cross-Origin Resource Sharing was set to allow all origins. An attacker could use this lack of protection to conduct phishing attacks and further access unauthorized information.",
+   "CVE-2019-14900": "A flaw was found in Hibernate ORM in versions before 5.3.18, 5.4.18 and 5.5.0.Beta1. A SQL injection in the implementation of the JPA Criteria API can permit unsanitized literals when a literal is used in the SELECT or GROUP BY parts of the query. This flaw could allow an attacker to access unauthorized information or possibly conduct further attacks."
+  }
+ },
+ {
+  "name": "fuse-3.11.0",
+  "pname": "fuse",
+  "version": "3.11.0",
+  "derivation": "/nix/store/p8a9zkcg9zk0s5pa1ccgw2h7dl3kb7dq-fuse-3.11.0.drv",
+  "affected_by": [
+   "CVE-2019-14860",
+   "CVE-2019-14900"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2019-14860": 6.5,
+   "CVE-2019-14900": 6.5
+  },
+  "description": {
+   "CVE-2019-14860": "It was found that the Syndesis configuration for Cross-Origin Resource Sharing was set to allow all origins. An attacker could use this lack of protection to conduct phishing attacks and further access unauthorized information.",
+   "CVE-2019-14900": "A flaw was found in Hibernate ORM in versions before 5.3.18, 5.4.18 and 5.5.0.Beta1. A SQL injection in the implementation of the JPA Criteria API can permit unsanitized literals when a literal is used in the SELECT or GROUP BY parts of the query. This flaw could allow an attacker to access unauthorized information or possibly conduct further attacks."
+  }
+ },
+ {
+  "name": "fwupd-1.8.4",
+  "pname": "fwupd",
+  "version": "1.8.4",
+  "derivation": "/nix/store/d0fpvyy6cpw1iqzhcj6wl7bdp7llcp6d-fwupd-1.8.4.drv",
+  "affected_by": [
+   "CVE-2022-3287"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-3287": 6.5
+  },
+  "description": {
+   "CVE-2022-3287": "When creating an OPERATOR user account on the BMC, the redfish plugin saved the auto-generated password to /etc/fwupd/redfish.conf without proper restriction, allowing any user on the system to read the same configuration file."
+  }
+ },
+ {
+  "name": "gcc-7.5.0",
+  "pname": "gcc",
+  "version": "7.5.0",
+  "derivation": "/nix/store/kw7g2gd7gl6bvfp09b858npiqvaycbcv-gcc-7.5.0.drv",
+  "affected_by": [
+   "CVE-2018-12886",
+   "CVE-2021-37322"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-37322": 7.8,
+   "CVE-2018-12886": 8.1
+  },
+  "description": {
+   "CVE-2021-37322": "GCC c++filt v2.26 was discovered to contain a use-after-free vulnerability via the component cplus-dem.c.",
+   "CVE-2018-12886": "stack_protect_prologue in cfgexpand.c and stack_protect_epilogue in function.c in GNU Compiler Collection (GCC) 4.1 through 8 (under certain circumstances) generate instruction sequences when targeting ARM targets that spill the address of the stack protector guard, which allows an attacker to bypass the protection of -fstack-protector, -fstack-protector-all, -fstack-protector-strong, and -fstack-protector-explicit against stack overflow by controlling what the stack canary is compared against."
+  }
+ },
+ {
+  "name": "giflib-5.2.1",
+  "pname": "giflib",
+  "version": "5.2.1",
+  "derivation": "/nix/store/0hmpxlknij2cczry0cwg709nx15r59fx-giflib-5.2.1.drv",
+  "affected_by": [
+   "CVE-2022-28506"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-28506": 5.5
+  },
+  "description": {
+   "CVE-2022-28506": "There is a heap-buffer-overflow in GIFLIB 5.2.1 function DumpScreen2RGB() in gif2rgb.c:298:45."
+  }
+ },
+ {
+  "name": "git-2.38.0",
+  "pname": "git",
+  "version": "2.38.0",
+  "derivation": "/nix/store/2065ydg5dfczfp53s9sg7jy7njfpcpf2-git-2.38.0.drv",
+  "affected_by": [
+   "CVE-2018-1000110",
+   "CVE-2018-1000182",
+   "CVE-2019-1003010",
+   "CVE-2020-2136",
+   "CVE-2021-21684",
+   "CVE-2022-30947",
+   "CVE-2022-30948",
+   "CVE-2022-30949",
+   "CVE-2022-36882",
+   "CVE-2022-36883",
+   "CVE-2022-36884",
+   "CVE-2022-38663",
+   "CVE-2022-39253",
+   "CVE-2022-39260"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-39260": 8.8,
+   "CVE-2022-38663": 6.5,
+   "CVE-2022-39253": 5.5,
+   "CVE-2020-2136": 5.4,
+   "CVE-2021-21684": 6.1,
+   "CVE-2018-1000110": 5.3,
+   "CVE-2022-36884": 5.3,
+   "CVE-2022-30947": 7.5,
+   "CVE-2022-30949": 5.3,
+   "CVE-2019-1003010": 4.3,
+   "CVE-2022-30948": 7.5,
+   "CVE-2022-36883": 7.5,
+   "CVE-2018-1000182": 6.4,
+   "CVE-2022-36882": 8.8
+  },
+  "description": {
+   "CVE-2022-39260": "Git is an open source, scalable, distributed revision control system. `git shell` is a restricted login shell that can be used to implement Git's push/pull functionality via SSH. In versions prior to 2.30.6, 2.31.5, 2.32.4, 2.33.5, 2.34.5, 2.35.5, 2.36.3, and 2.37.4, the function that splits the command arguments into an array improperly uses an `int` to represent the number of entries in the array, allowing a malicious actor to intentionally overflow the return value, leading to arbitrary heap writes. Because the resulting array is then passed to `execv()`, it is possible to leverage this attack to gain remote code execution on a victim machine. Note that a victim must first allow access to `git shell` as a login shell in order to be vulnerable to this attack. This problem is patched in versions 2.30.6, 2.31.5, 2.32.4, 2.33.5, 2.34.5, 2.35.5, 2.36.3, and 2.37.4 and users are advised to upgrade to the latest version. Disabling `git shell` access via remote logins is a viable short-term workaround.",
+   "CVE-2022-38663": "Jenkins Git Plugin 4.11.4 and earlier does not properly mask (i.e., replace with asterisks) credentials in the build log provided by the Git Username and Password (`gitUsernamePassword`) credentials binding.",
+   "CVE-2022-39253": "Git is an open source, scalable, distributed revision control system. Versions prior to 2.30.6, 2.31.5, 2.32.4, 2.33.5, 2.34.5, 2.35.5, 2.36.3, and 2.37.4 are subject to exposure of sensitive information to a malicious actor. When performing a local clone (where the source and target of the clone are on the same volume), Git copies the contents of the source's `$GIT_DIR/objects` directory into the destination by either creating hardlinks to the source contents, or copying them (if hardlinks are disabled via `--no-hardlinks`). A malicious actor could convince a victim to clone a repository with a symbolic link pointing at sensitive information on the victim's machine. This can be done either by having the victim clone a malicious repository on the same machine, or having them clone a malicious repository embedded as a bare repository via a submodule from any source, provided they clone with the `--recurse-submodules` option. Git does not create symbolic links in the `$GIT_DIR/objects` directory. The problem has been patched in the versions published on 2022-10-18, and backported to v2.30.x. Potential workarounds: Avoid cloning untrusted repositories using the `--local` optimization when on a shared machine, either by passing the `--no-local` option to `git clone` or cloning from a URL that uses the `file://` scheme. Alternatively, avoid cloning repositories from untrusted sources with `--recurse-submodules` or run `git config --global protocol.file.allow user`.",
+   "CVE-2020-2136": "Jenkins Git Plugin 4.2.0 and earlier does not escape the error message for the repository URL for Microsoft TFS field form validation, resulting in a stored cross-site scripting vulnerability.",
+   "CVE-2021-21684": "Jenkins Git Plugin 4.8.2 and earlier does not escape the Git SHA-1 checksum parameters provided to commit notifications when displaying them in a build cause, resulting in a stored cross-site scripting (XSS) vulnerability.",
+   "CVE-2018-1000110": "An improper authorization vulnerability exists in Jenkins Git Plugin version 3.7.0 and earlier in GitStatus.java that allows an attacker with network access to obtain a list of nodes and users.",
+   "CVE-2022-36884": "The webhook endpoint in Jenkins Git Plugin 4.11.3 and earlier provide unauthenticated attackers information about the existence of jobs configured to use an attacker-specified Git repository.",
+   "CVE-2022-30947": "Jenkins Git Plugin 4.11.1 and earlier allows attackers able to configure pipelines to check out some SCM repositories stored on the Jenkins controller's file system using local paths as SCM URLs, obtaining limited information about other projects' SCM contents.",
+   "CVE-2022-30949": "Jenkins REPO Plugin 1.14.0 and earlier allows attackers able to configure pipelines to check out some SCM repositories stored on the Jenkins controller's file system using local paths as SCM URLs, obtaining limited information about other projects' SCM contents.",
+   "CVE-2019-1003010": "A cross-site request forgery vulnerability exists in Jenkins Git Plugin 3.9.1 and earlier in src/main/java/hudson/plugins/git/GitTagAction.java that allows attackers to create a Git tag in a workspace and attach corresponding metadata to a build record.",
+   "CVE-2022-30948": "Jenkins Mercurial Plugin 2.16 and earlier allows attackers able to configure pipelines to check out some SCM repositories stored on the Jenkins controller's file system using local paths as SCM URLs, obtaining limited information about other projects' SCM contents.",
+   "CVE-2022-36883": "A missing permission check in Jenkins Git Plugin 4.11.3 and earlier allows unauthenticated attackers to trigger builds of jobs configured to use an attacker-specified Git repository and to cause them to check out an attacker-specified commit.",
+   "CVE-2018-1000182": "A server-side request forgery vulnerability exists in Jenkins Git Plugin 3.9.0 and older in AssemblaWeb.java, GitBlitRepositoryBrowser.java, Gitiles.java, TFS2013GitRepositoryBrowser.java, ViewGitWeb.java that allows attackers with Overall/Read access to cause Jenkins to send a GET request to a specified URL.",
+   "CVE-2022-36882": "A cross-site request forgery (CSRF) vulnerability in Jenkins Git Plugin 4.11.3 and earlier allows attackers to trigger builds of jobs configured to use an attacker-specified Git repository and to cause them to check out an attacker-specified commit."
+  }
+ },
+ {
+  "name": "glibc-2.34-210",
+  "pname": "glibc",
+  "version": "2.34-210",
+  "derivation": "/nix/store/7nfb9w5hzwd7p03z929svi67iynl7vx7-glibc-2.34-210.drv",
+  "affected_by": [
+   "CVE-2021-3998"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-3998": 7.5
+  },
+  "description": {
+   "CVE-2021-3998": "A flaw was found in glibc. The realpath() function can mistakenly return an unexpected value, potentially leading to information leakage and disclosure of sensitive data."
+  }
+ },
+ {
+  "name": "go-1.16-linux-amd64-bootstrap",
+  "pname": "go",
+  "version": "1.16-linux-amd64-bootstrap",
+  "derivation": "/nix/store/jgb41kyfz60bxjpibcpjd6dfclfckfg5-go-1.16-linux-amd64-bootstrap.drv",
+  "affected_by": [
+   "CVE-2021-29923",
+   "CVE-2021-38297",
+   "CVE-2021-39293",
+   "CVE-2021-41771",
+   "CVE-2021-41772",
+   "CVE-2021-44716",
+   "CVE-2021-44717",
+   "CVE-2022-1705",
+   "CVE-2022-1962",
+   "CVE-2022-23772",
+   "CVE-2022-23773",
+   "CVE-2022-23806",
+   "CVE-2022-24675",
+   "CVE-2022-24921",
+   "CVE-2022-27664",
+   "CVE-2022-28131",
+   "CVE-2022-28327",
+   "CVE-2022-2879",
+   "CVE-2022-2880",
+   "CVE-2022-29526",
+   "CVE-2022-29804",
+   "CVE-2022-30580",
+   "CVE-2022-30629",
+   "CVE-2022-30630",
+   "CVE-2022-30631",
+   "CVE-2022-30632",
+   "CVE-2022-30633",
+   "CVE-2022-30634",
+   "CVE-2022-30635",
+   "CVE-2022-32148",
+   "CVE-2022-32189",
+   "CVE-2022-41715"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-32148": 6.5,
+   "CVE-2022-41715": 7.5,
+   "CVE-2022-30580": 7.8,
+   "CVE-2022-27664": 7.5,
+   "CVE-2022-28327": 7.5,
+   "CVE-2022-30633": 7.5,
+   "CVE-2022-30632": 7.5,
+   "CVE-2021-41772": 7.5,
+   "CVE-2022-30631": 7.5,
+   "CVE-2022-30634": 7.5,
+   "CVE-2022-30629": 3.1,
+   "CVE-2022-23806": 9.1,
+   "CVE-2021-39293": 7.5,
+   "CVE-2022-1962": 5.5,
+   "CVE-2022-2879": 7.5,
+   "CVE-2021-38297": 9.8,
+   "CVE-2022-23773": 7.5,
+   "CVE-2022-28131": 7.5,
+   "CVE-2022-1705": 6.5,
+   "CVE-2022-29526": 5.3,
+   "CVE-2022-24921": 7.5,
+   "CVE-2022-2880": 7.5,
+   "CVE-2022-29804": 7.5,
+   "CVE-2022-23772": 7.5,
+   "CVE-2022-32189": 7.5,
+   "CVE-2021-29923": 7.5,
+   "CVE-2022-30630": 7.5,
+   "CVE-2022-24675": 7.5,
+   "CVE-2022-30635": 7.5,
+   "CVE-2021-44717": 4.8,
+   "CVE-2021-41771": 7.5,
+   "CVE-2021-44716": 7.5
+  },
+  "description": {
+   "CVE-2022-32148": "Improper exposure of client IP addresses in net/http before Go 1.17.12 and Go 1.18.4 can be triggered by calling httputil.ReverseProxy.ServeHTTP with a Request.Header map containing a nil value for the X-Forwarded-For header, which causes ReverseProxy to set the client IP as the value of the X-Forwarded-For header.",
+   "CVE-2022-41715": "Programs which compile regular expressions from untrusted sources may be vulnerable to memory exhaustion or denial of service. The parsed regexp representation is linear in the size of the input, but in some cases the constant factor can be as high as 40,000, making relatively small regexps consume much larger amounts of memory. After fix, each regexp being parsed is limited to a 256 MB memory footprint. Regular expressions whose representation would use more space than that are rejected. Normal use of regular expressions is unaffected.",
+   "CVE-2022-30580": "Code injection in Cmd.Start in os/exec before Go 1.17.11 and Go 1.18.3 allows execution of any binaries in the working directory named either \"..com\" or \"..exe\" by calling Cmd.Run, Cmd.Start, Cmd.Output, or Cmd.CombinedOutput when Cmd.Path is unset.",
+   "CVE-2022-27664": "In net/http in Go before 1.18.6 and 1.19.x before 1.19.1, attackers can cause a denial of service because an HTTP/2 connection can hang during closing if shutdown were preempted by a fatal error.",
+   "CVE-2022-28327": "The generic P-256 feature in crypto/elliptic in Go before 1.17.9 and 1.18.x before 1.18.1 allows a panic via long scalar input.",
+   "CVE-2022-30633": "Uncontrolled recursion in Unmarshal in encoding/xml before Go 1.17.12 and Go 1.18.4 allows an attacker to cause a panic due to stack exhaustion via unmarshalling an XML document into a Go struct which has a nested field that uses the 'any' field tag.",
+   "CVE-2022-30632": "Uncontrolled recursion in Glob in path/filepath before Go 1.17.12 and Go 1.18.4 allows an attacker to cause a panic due to stack exhaustion via a path containing a large number of path separators.",
+   "CVE-2021-41772": "Go before 1.16.10 and 1.17.x before 1.17.3 allows an archive/zip Reader.Open panic via a crafted ZIP archive containing an invalid name or an empty filename field.",
+   "CVE-2022-30631": "Uncontrolled recursion in Reader.Read in compress/gzip before Go 1.17.12 and Go 1.18.4 allows an attacker to cause a panic due to stack exhaustion via an archive containing a large number of concatenated 0-length compressed files.",
+   "CVE-2022-30634": "Infinite loop in Read in crypto/rand before Go 1.17.11 and Go 1.18.3 on Windows allows attacker to cause an indefinite hang by passing a buffer larger than 1 << 32 - 1 bytes.",
+   "CVE-2022-30629": "Non-random values for ticket_age_add in session tickets in crypto/tls before Go 1.17.11 and Go 1.18.3 allow an attacker that can observe TLS handshakes to correlate successive connections by comparing ticket ages during session resumption.",
+   "CVE-2022-23806": "Curve.IsOnCurve in crypto/elliptic in Go before 1.16.14 and 1.17.x before 1.17.7 can incorrectly return true in situations with a big.Int value that is not a valid field element.",
+   "CVE-2021-39293": "In archive/zip in Go before 1.16.8 and 1.17.x before 1.17.1, a crafted archive header (falsely designating that many files are present) can cause a NewReader or OpenReader panic. NOTE: this issue exists because of an incomplete fix for CVE-2021-33196.",
+   "CVE-2022-1962": "Uncontrolled recursion in the Parse functions in go/parser before Go 1.17.12 and Go 1.18.4 allow an attacker to cause a panic due to stack exhaustion via deeply nested types or declarations.",
+   "CVE-2022-2879": "Reader.Read does not set a limit on the maximum size of file headers. A maliciously crafted archive could cause Read to allocate unbounded amounts of memory, potentially causing resource exhaustion or panics. After fix, Reader.Read limits the maximum size of header blocks to 1 MiB.",
+   "CVE-2021-38297": "Go before 1.16.9 and 1.17.x before 1.17.2 has a Buffer Overflow via large arguments in a function invocation from a WASM module, when GOARCH=wasm GOOS=js is used.",
+   "CVE-2022-23773": "cmd/go in Go before 1.16.14 and 1.17.x before 1.17.7 can misinterpret branch names that falsely appear to be version tags. This can lead to incorrect access control if an actor is supposed to be able to create branches but not tags.",
+   "CVE-2022-28131": "In Decoder.Skip in encoding/xml in Go before 1.17.12 and 1.18.x before 1.18.4, stack exhaustion and a panic can occur via a deeply nested XML document.",
+   "CVE-2022-1705": "Acceptance of some invalid Transfer-Encoding headers in the HTTP/1 client in net/http before Go 1.17.12 and Go 1.18.4 allows HTTP request smuggling if combined with an intermediate server that also improperly fails to reject the header as invalid.",
+   "CVE-2022-29526": "Go before 1.17.10 and 1.18.x before 1.18.2 has Incorrect Privilege Assignment. When called with a non-zero flags parameter, the Faccessat function could incorrectly report that a file is accessible.",
+   "CVE-2022-24921": "regexp.Compile in Go before 1.16.15 and 1.17.x before 1.17.8 allows stack exhaustion via a deeply nested expression.",
+   "CVE-2022-2880": "Requests forwarded by ReverseProxy include the raw query parameters from the inbound request, including unparseable parameters rejected by net/http. This could permit query parameter smuggling when a Go proxy forwards a parameter with an unparseable value. After fix, ReverseProxy sanitizes the query parameters in the forwarded query when the outbound request's Form field is set after the ReverseProxy. Director function returns, indicating that the proxy has parsed the query parameters. Proxies which do not parse query parameters continue to forward the original query parameters unchanged.",
+   "CVE-2022-29804": "In filepath.Clean in path/filepath in Go before 1.17.11 and 1.18.x before 1.18.3 on Windows, invalid paths such as .\\c: could be converted to valid paths (such as c: in this example).",
+   "CVE-2022-23772": "Rat.SetString in math/big in Go before 1.16.14 and 1.17.x before 1.17.7 has an overflow that can lead to Uncontrolled Memory Consumption.",
+   "CVE-2022-32189": "A too-short encoded message can cause a panic in Float.GobDecode and Rat GobDecode in math/big in Go before 1.17.13 and 1.18.5, potentially allowing a denial of service.",
+   "CVE-2021-29923": "Go before 1.17 does not properly consider extraneous zero characters at the beginning of an IP address octet, which (in some situations) allows attackers to bypass access control that is based on IP addresses, because of unexpected octal interpretation. This affects net.ParseIP and net.ParseCIDR.",
+   "CVE-2022-30630": "Uncontrolled recursion in Glob in io/fs before Go 1.17.12 and Go 1.18.4 allows an attacker to cause a panic due to stack exhaustion via a path which contains a large number of path separators.",
+   "CVE-2022-24675": "encoding/pem in Go before 1.17.9 and 1.18.x before 1.18.1 has a Decode stack overflow via a large amount of PEM data.",
+   "CVE-2022-30635": "Uncontrolled recursion in Decoder.Decode in encoding/gob before Go 1.17.12 and Go 1.18.4 allows an attacker to cause a panic due to stack exhaustion via a message which contains deeply nested structures.",
+   "CVE-2021-44717": "Go before 1.16.12 and 1.17.x before 1.17.5 on UNIX allows write operations to an unintended file or unintended network connection as a consequence of erroneous closing of file descriptor 0 after file-descriptor exhaustion.",
+   "CVE-2021-41771": "ImportedSymbols in debug/macho (for Open or OpenFat) in Go before 1.16.10 and 1.17.x before 1.17.3 Accesses a Memory Location After the End of a Buffer, aka an out-of-bounds slice situation.",
+   "CVE-2021-44716": "net/http in Go before 1.16.12 and 1.17.x before 1.17.5 allows uncontrolled memory consumption in the header canonicalization cache via HTTP/2 requests."
+  }
+ },
+ {
+  "name": "gradle-7.5",
+  "pname": "gradle",
+  "version": "7.5",
+  "derivation": "/nix/store/93g4s4i56l518x68dwl51vlzpbih1dn2-gradle-7.5.drv",
+  "affected_by": [
+   "CVE-2022-31156"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-31156": 4.4
+  },
+  "description": {
+   "CVE-2022-31156": "Gradle is a build tool. Dependency verification is a security feature in Gradle Build Tool that was introduced to allow validation of external dependencies either through their checksum or cryptographic signatures. In versions 6.2 through 7.4.2, there are some cases in which Gradle may skip that verification and accept a dependency that would otherwise fail the build as an untrusted external artifact. This can occur in two ways. When signature verification is disabled but the verification metadata contains entries for dependencies that only have a `gpg` element but no `checksum` element. When signature verification is enabled, the verification metadata contains entries for dependencies with a `gpg` element but there is no signature file on the remote repository. In both cases, the verification will accept the dependency, skipping signature verification and not complaining that the dependency has no checksum entry. For builds that are vulnerable, there are two risks. Gradle could download a malicious binary from a repository outside your organization due to name squatting. For those still using HTTP only and not HTTPS for downloading dependencies, the build could download a malicious library instead of the expected one. Gradle 7.5 patches this issue by making sure to run checksum verification if signature verification cannot be completed, whatever the reason. Two workarounds are available: Remove all `gpg` elements from dependency verification metadata if you disable signature validation and/or avoid adding `gpg` entries for dependencies that do not have signature files."
+  }
+ },
+ {
+  "name": "http-client-0.7.13.1",
+  "pname": "http-client",
+  "version": "0.7.13.1",
+  "derivation": "/nix/store/6hmcj2gap5pdl3wgsnw9giyrlm286df5-http-client-0.7.13.1.drv",
+  "affected_by": [
+   "CVE-2020-11021"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2020-11021": 7.5
+  },
+  "description": {
+   "CVE-2020-11021": "Actions Http-Client (NPM @actions/http-client) before version 1.0.8 can disclose Authorization headers to incorrect domain in certain redirect scenarios. The conditions in which this happens are if consumers of the http-client: 1. make an http request with an authorization header 2. that request leads to a redirect (302) and 3. the redirect url redirects to another domain or hostname Then the authorization header will get passed to the other domain. The problem is fixed in version 1.0.8."
+  }
+ },
+ {
+  "name": "jitsi-meet-1.0.6600",
+  "pname": "jitsi-meet",
+  "version": "1.0.6600",
+  "derivation": "/nix/store/jcbn8a0gwq13p2264vqw1nrlql4r46d6-jitsi-meet-1.0.6600.drv",
+  "affected_by": [
+   "CVE-2021-33506",
+   "CVE-2021-39205"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-33506": 7.5,
+   "CVE-2021-39205": 6.1
+  },
+  "description": {
+   "CVE-2021-33506": "jitsi-meet-prosody in Jitsi Meet before 2.0.5963-1 does not ensure that restrict_room_creation is set by default. This can allow an attacker to circumvent conference moderation.",
+   "CVE-2021-39205": "Jitsi Meet is an open source video conferencing application. Versions prior to 2.0.6173 are vulnerable to client-side cross-site scripting via injecting properties into JSON objects that were not properly escaped. There are no known incidents related to this vulnerability being exploited in the wild. This issue is fixed in Jitsi Meet version 2.0.6173. There are no known workarounds aside from upgrading."
+  }
+ },
+ {
+  "name": "lapack-3",
+  "pname": "lapack",
+  "version": "3",
+  "derivation": "/nix/store/c6jh6xg4lj545m3hnpbid7pb7hmv9cmx-lapack-3.drv",
+  "affected_by": [
+   "CVE-2021-4048"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-4048": 9.1
+  },
+  "description": {
+   "CVE-2021-4048": "An out-of-bounds read flaw was found in the CLARRV, DLARRV, SLARRV, and ZLARRV functions in lapack through version 3.10.0, as also used in OpenBLAS before version 0.3.18. Specially crafted inputs passed to these functions could cause an application using lapack to crash or possibly disclose portions of its memory."
+  }
+ },
+ {
+  "name": "lens-5.0.1",
+  "pname": "lens",
+  "version": "5.0.1",
+  "derivation": "/nix/store/f768xl5agsc721f8zq652kz8zc9cqa02-lens-5.0.1.drv",
+  "affected_by": [
+   "CVE-2021-23154",
+   "CVE-2021-44458"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-44458": 9.6,
+   "CVE-2021-23154": 7.8
+  },
+  "description": {
+   "CVE-2021-44458": "Linux users running Lens 5.2.6 and earlier could be compromised by visiting a malicious website. The malicious website could make websocket connections from the victim's browser to Lens and so operate the local terminal feature. This would allow the attacker to execute arbitrary commands as the Lens user.",
+   "CVE-2021-23154": "In Lens prior to 5.3.4, custom helm chart configuration creates helm commands from string concatenation of provided arguments which are then executed in the user's shell. Arguments can be provided which cause arbitrary shell commands to run on the system."
+  }
+ },
+ {
+  "name": "lens-5.0.1-r3.cabal",
+  "pname": "lens",
+  "version": "5.0.1-r3.cabal",
+  "derivation": "/nix/store/8rr9l25sci7hz39dzl7allx5z92cznjf-lens-5.0.1-r3.cabal.drv",
+  "affected_by": [
+   "CVE-2021-23154",
+   "CVE-2021-44458"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-44458": 9.6,
+   "CVE-2021-23154": 7.8
+  },
+  "description": {
+   "CVE-2021-44458": "Linux users running Lens 5.2.6 and earlier could be compromised by visiting a malicious website. The malicious website could make websocket connections from the victim's browser to Lens and so operate the local terminal feature. This would allow the attacker to execute arbitrary commands as the Lens user.",
+   "CVE-2021-23154": "In Lens prior to 5.3.4, custom helm chart configuration creates helm commands from string concatenation of provided arguments which are then executed in the user's shell. Arguments can be provided which cause arbitrary shell commands to run on the system."
+  }
+ },
+ {
+  "name": "libde265-1.0.8",
+  "pname": "libde265",
+  "version": "1.0.8",
+  "derivation": "/nix/store/ijcws8mhb096pgp06cjr172026g852by-libde265-1.0.8.drv",
+  "affected_by": [
+   "CVE-2021-35452",
+   "CVE-2021-36408",
+   "CVE-2021-36409",
+   "CVE-2021-36410",
+   "CVE-2021-36411",
+   "CVE-2022-43235",
+   "CVE-2022-43236",
+   "CVE-2022-43237",
+   "CVE-2022-43238",
+   "CVE-2022-43239",
+   "CVE-2022-43240",
+   "CVE-2022-43241",
+   "CVE-2022-43242",
+   "CVE-2022-43243",
+   "CVE-2022-43244",
+   "CVE-2022-43245",
+   "CVE-2022-43248",
+   "CVE-2022-43249",
+   "CVE-2022-43250",
+   "CVE-2022-43252",
+   "CVE-2022-43253"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-36408": 5.5,
+   "CVE-2022-43241": 6.5,
+   "CVE-2022-43252": 6.5,
+   "CVE-2022-43239": 6.5,
+   "CVE-2022-43248": 6.5,
+   "CVE-2022-43250": 6.5,
+   "CVE-2022-43238": 6.5,
+   "CVE-2022-43240": 6.5,
+   "CVE-2022-43253": 6.5,
+   "CVE-2022-43237": 6.5,
+   "CVE-2021-35452": 6.5,
+   "CVE-2022-43249": 6.5,
+   "CVE-2022-43245": 6.5,
+   "CVE-2021-36410": 5.5,
+   "CVE-2022-43244": 6.5,
+   "CVE-2022-43242": 6.5,
+   "CVE-2022-43236": 6.5,
+   "CVE-2021-36409": 7.8,
+   "CVE-2022-43243": 6.5,
+   "CVE-2022-43235": 6.5,
+   "CVE-2021-36411": 5.5
+  },
+  "description": {
+   "CVE-2021-36408": "An issue was discovered in libde265 v1.0.8.There is a Heap-use-after-free in intrapred.h when decoding file using dec265.",
+   "CVE-2022-43241": "Libde265 v1.0.8 was discovered to contain an unknown crash via ff_hevc_put_hevc_qpel_v_3_8_sse in sse-motion.cc. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted video file.",
+   "CVE-2022-43252": "Libde265 v1.0.8 was discovered to contain a heap-buffer-overflow vulnerability via put_epel_16_fallback in fallback-motion.cc. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted video file.",
+   "CVE-2022-43239": "Libde265 v1.0.8 was discovered to contain a heap-buffer-overflow vulnerability via mc_chroma<unsigned short> in motion.cc. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted video file.",
+   "CVE-2022-43248": "Libde265 v1.0.8 was discovered to contain a heap-buffer-overflow vulnerability via put_weighted_pred_avg_16_fallback in fallback-motion.cc. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted video file.",
+   "CVE-2022-43250": "Libde265 v1.0.8 was discovered to contain a heap-buffer-overflow vulnerability via put_qpel_0_0_fallback_16 in fallback-motion.cc. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted video file.",
+   "CVE-2022-43238": "Libde265 v1.0.8 was discovered to contain an unknown crash via ff_hevc_put_hevc_qpel_h_3_v_3_sse in sse-motion.cc. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted video file.",
+   "CVE-2022-43240": "Libde265 v1.0.8 was discovered to contain a heap-buffer-overflow vulnerability via ff_hevc_put_hevc_qpel_h_2_v_1_sse in sse-motion.cc. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted video file.",
+   "CVE-2022-43253": "Libde265 v1.0.8 was discovered to contain a heap-buffer-overflow vulnerability via put_unweighted_pred_16_fallback in fallback-motion.cc. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted video file.",
+   "CVE-2022-43237": "Libde265 v1.0.8 was discovered to contain a stack-buffer-overflow vulnerability via void put_epel_hv_fallback<unsigned short> in fallback-motion.cc. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted video file.",
+   "CVE-2021-35452": "An Incorrect Access Control vulnerability exists in libde265 v1.0.8 due to a SEGV in slice.cc.",
+   "CVE-2022-43249": "Libde265 v1.0.8 was discovered to contain a heap-buffer-overflow vulnerability via put_epel_hv_fallback<unsigned short> in fallback-motion.cc. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted video file.",
+   "CVE-2022-43245": "Libde265 v1.0.8 was discovered to contain a segmentation violation via apply_sao_internal<unsigned short> in sao.cc. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted video file.",
+   "CVE-2021-36410": "A stack-buffer-overflow exists in libde265 v1.0.8 via fallback-motion.cc in function put_epel_hv_fallback when running program dec265.",
+   "CVE-2022-43244": "Libde265 v1.0.8 was discovered to contain a heap-buffer-overflow vulnerability via put_qpel_fallback<unsigned short> in fallback-motion.cc. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted video file.",
+   "CVE-2022-43242": "Libde265 v1.0.8 was discovered to contain a heap-buffer-overflow vulnerability via mc_luma<unsigned char> in motion.cc. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted video file.",
+   "CVE-2022-43236": "Libde265 v1.0.8 was discovered to contain a stack-buffer-overflow vulnerability via put_qpel_fallback<unsigned short> in fallback-motion.cc. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted video file.",
+   "CVE-2021-36409": "There is an Assertion `scaling_list_pred_matrix_id_delta==1' failed at sps.cc:925 in libde265 v1.0.8 when decoding file, which allows attackers to cause a Denial of Service (DoS) by running the application with a crafted file or possibly have unspecified other impact.",
+   "CVE-2022-43243": "Libde265 v1.0.8 was discovered to contain a heap-buffer-overflow vulnerability via ff_hevc_put_weighted_pred_avg_8_sse in sse-motion.cc. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted video file.",
+   "CVE-2022-43235": "Libde265 v1.0.8 was discovered to contain a heap-buffer-overflow vulnerability via ff_hevc_put_hevc_epel_pixels_8_sse in sse-motion.cc. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted video file.",
+   "CVE-2021-36411": "An issue has been found in libde265 v1.0.8 due to incorrect access control. A SEGV caused by a READ memory access in function derive_boundaryStrength of deblock.cc has occurred. The vulnerability causes a segmentation fault and application crash, which leads to remote denial of service."
+  }
+ },
+ {
+  "name": "libjxl-0.6.1",
+  "pname": "libjxl",
+  "version": "0.6.1",
+  "derivation": "/nix/store/3ls01pdi0f6jfk7a9qjmj3a7czfcsaly-libjxl-0.6.1.drv",
+  "affected_by": [
+   "CVE-2022-34000"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-34000": 6.5
+  },
+  "description": {
+   "CVE-2022-34000": "libjxl 0.6.1 has an assertion failure in LowMemoryRenderPipeline::Init() in render_pipeline/low_memory_render_pipeline.cc."
+  }
+ },
+ {
+  "name": "libmad-0.15.1b",
+  "pname": "libmad",
+  "version": "0.15.1b",
+  "derivation": "/nix/store/7alinndhsx0f57ha18vvkdzjibrvvh13-libmad-0.15.1b.drv",
+  "affected_by": [
+   "CVE-2018-7263"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2018-7263": 9.8
+  },
+  "description": {
+   "CVE-2018-7263": "The mad_decoder_run() function in decoder.c in Underbit libmad through 0.15.1b allows remote attackers to cause a denial of service (SIGABRT because of double free or corruption) or possibly have unspecified other impact via a crafted file. NOTE: this may overlap CVE-2017-11552."
+  }
+ },
+ {
+  "name": "libmpeg2-0.5.1",
+  "pname": "libmpeg2",
+  "version": "0.5.1",
+  "derivation": "/nix/store/j22s3xf3rvk7p0gdgykp3837w43lrqgc-libmpeg2-0.5.1.drv",
+  "affected_by": [
+   "CVE-2022-37416"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-37416": 6.5
+  },
+  "description": {
+   "CVE-2022-37416": "Ittiam libmpeg2 before 2022-07-27 uses memcpy with overlapping memory blocks in impeg2_mc_fullx_fully_8x8."
+  }
+ },
+ {
+  "name": "libpng-1.2.59",
+  "pname": "libpng",
+  "version": "1.2.59",
+  "derivation": "/nix/store/mqnclmbrka5v95jjxgkn2fdjgm9pd9vm-libpng-1.2.59.drv",
+  "affected_by": [
+   "CVE-2017-12652"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2017-12652": 9.8
+  },
+  "description": {
+   "CVE-2017-12652": "libpng before 1.6.32 does not properly check the length of chunks against the user limit."
+  }
+ },
+ {
+  "name": "libtasn1-4.18.0",
+  "pname": "libtasn1",
+  "version": "4.18.0",
+  "derivation": "/nix/store/a66kxfi1spdfj6274ryxwgffxz5adipc-libtasn1-4.18.0.drv",
+  "affected_by": [
+   "CVE-2021-46848"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-46848": 9.1
+  },
+  "description": {
+   "CVE-2021-46848": "GNU Libtasn1 before 4.19.0 has an ETYPE_OK off-by-one array size check that affects asn1_encode_simple_der."
+  }
+ },
+ {
+  "name": "libtiff-4.3.0",
+  "pname": "libtiff",
+  "version": "4.3.0",
+  "derivation": "/nix/store/yirw0lzd3n4ayb748d17qbxr598md78x-libtiff-4.3.0.drv",
+  "affected_by": [
+   "CVE-2022-1056",
+   "CVE-2022-1210",
+   "CVE-2022-1622",
+   "CVE-2022-1623",
+   "CVE-2022-3570",
+   "CVE-2022-3597",
+   "CVE-2022-3598",
+   "CVE-2022-3599",
+   "CVE-2022-3626",
+   "CVE-2022-3627"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-3627": 6.5,
+   "CVE-2022-3570": 9.8,
+   "CVE-2022-3626": 6.5,
+   "CVE-2022-3597": 6.5,
+   "CVE-2022-1056": 5.5,
+   "CVE-2022-3598": 6.5,
+   "CVE-2022-1623": 5.5,
+   "CVE-2022-1210": 6.5,
+   "CVE-2022-1622": 5.5,
+   "CVE-2022-3599": 6.5
+  },
+  "description": {
+   "CVE-2022-3627": "LibTIFF 4.4.0 has an out-of-bounds write in _TIFFmemcpy in libtiff/tif_unix.c:346 when called from extractImageSection, tools/tiffcrop.c:6860, allowing attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit 236b7191.",
+   "CVE-2022-3570": "Multiple heap buffer overflows in tiffcrop.c utility in libtiff library Version 4.4.0 allows attacker to trigger unsafe or out of bounds memory access via crafted TIFF image file which could result into application crash, potential information disclosure or any other context-dependent impact",
+   "CVE-2022-3626": "LibTIFF 4.4.0 has an out-of-bounds write in _TIFFmemset in libtiff/tif_unix.c:340 when called from processCropSelections, tools/tiffcrop.c:7619, allowing attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit 236b7191.",
+   "CVE-2022-3597": "LibTIFF 4.4.0 has an out-of-bounds write in _TIFFmemcpy in libtiff/tif_unix.c:346 when called from extractImageSection, tools/tiffcrop.c:6826, allowing attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit 236b7191.",
+   "CVE-2022-1056": "Out-of-bounds Read error in tiffcrop in libtiff 4.3.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit 46dc8fcd.",
+   "CVE-2022-3598": "LibTIFF 4.4.0 has an out-of-bounds write in extractContigSamplesShifted24bits in tools/tiffcrop.c:3604, allowing attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit cfbb883b.",
+   "CVE-2022-1623": "LibTIFF master branch has an out-of-bounds read in LZWDecode in libtiff/tif_lzw.c:624, allowing attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit b4e79bfa.",
+   "CVE-2022-1210": "A vulnerability classified as problematic was found in LibTIFF 4.3.0. Affected by this vulnerability is the TIFF File Handler of tiff2ps. Opening a malicious file leads to a denial of service. The attack can be launched remotely but requires user interaction. The exploit has been disclosed to the public and may be used.",
+   "CVE-2022-1622": "LibTIFF master branch has an out-of-bounds read in LZWDecode in libtiff/tif_lzw.c:619, allowing attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit b4e79bfa.",
+   "CVE-2022-3599": "LibTIFF 4.4.0 has an out-of-bounds read in writeSingleSection in tools/tiffcrop.c:7345, allowing attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit e8131125."
+  }
+ },
+ {
+  "name": "libtiff-4.4.0",
+  "pname": "libtiff",
+  "version": "4.4.0",
+  "derivation": "/nix/store/ypa4psmd56ajnnpsc8q3jzs9mhf0j325-libtiff-4.4.0.drv",
+  "affected_by": [
+   "CVE-2022-2056",
+   "CVE-2022-2057",
+   "CVE-2022-2058",
+   "CVE-2022-3570",
+   "CVE-2022-3597",
+   "CVE-2022-3598",
+   "CVE-2022-3599",
+   "CVE-2022-3626",
+   "CVE-2022-3627"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-3627": 6.5,
+   "CVE-2022-3570": 9.8,
+   "CVE-2022-3626": 6.5,
+   "CVE-2022-3597": 6.5,
+   "CVE-2022-2057": 6.5,
+   "CVE-2022-3598": 6.5,
+   "CVE-2022-2056": 6.5,
+   "CVE-2022-2058": 6.5,
+   "CVE-2022-3599": 6.5
+  },
+  "description": {
+   "CVE-2022-3627": "LibTIFF 4.4.0 has an out-of-bounds write in _TIFFmemcpy in libtiff/tif_unix.c:346 when called from extractImageSection, tools/tiffcrop.c:6860, allowing attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit 236b7191.",
+   "CVE-2022-3570": "Multiple heap buffer overflows in tiffcrop.c utility in libtiff library Version 4.4.0 allows attacker to trigger unsafe or out of bounds memory access via crafted TIFF image file which could result into application crash, potential information disclosure or any other context-dependent impact",
+   "CVE-2022-3626": "LibTIFF 4.4.0 has an out-of-bounds write in _TIFFmemset in libtiff/tif_unix.c:340 when called from processCropSelections, tools/tiffcrop.c:7619, allowing attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit 236b7191.",
+   "CVE-2022-3597": "LibTIFF 4.4.0 has an out-of-bounds write in _TIFFmemcpy in libtiff/tif_unix.c:346 when called from extractImageSection, tools/tiffcrop.c:6826, allowing attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit 236b7191.",
+   "CVE-2022-2057": "Divide By Zero error in tiffcrop in libtiff 4.4.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit f3a5e010.",
+   "CVE-2022-3598": "LibTIFF 4.4.0 has an out-of-bounds write in extractContigSamplesShifted24bits in tools/tiffcrop.c:3604, allowing attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit cfbb883b.",
+   "CVE-2022-2056": "Divide By Zero error in tiffcrop in libtiff 4.4.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit f3a5e010.",
+   "CVE-2022-2058": "Divide By Zero error in tiffcrop in libtiff 4.4.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit f3a5e010.",
+   "CVE-2022-3599": "LibTIFF 4.4.0 has an out-of-bounds read in writeSingleSection in tools/tiffcrop.c:7345, allowing attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit e8131125."
+  }
+ },
+ {
+  "name": "libxslt-1.1.35",
+  "pname": "libxslt",
+  "version": "1.1.35",
+  "derivation": "/nix/store/72l1i39h4426c8p0r4s09pgl4zl2c8w0-libxslt-1.1.35.drv",
+  "affected_by": [
+   "CVE-2022-29824"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-29824": 6.5
+  },
+  "description": {
+   "CVE-2022-29824": "In libxml2 before 2.9.14, several buffer handling functions in buf.c (xmlBuf*) and tree.c (xmlBuffer*) don't check for integer overflows. This can result in out-of-bounds memory writes. Exploitation requires a victim to open a crafted, multi-gigabyte XML file. Other software using libxml2's buffer functions, for example libxslt through 1.1.35, is affected as well."
+  }
+ },
+ {
+  "name": "linux-pam-1.5.2",
+  "pname": "linux-pam",
+  "version": "1.5.2",
+  "derivation": "/nix/store/gap4fc1gq4ljlq1fdg6c2b7j994hb82n-linux-pam-1.5.2.drv",
+  "affected_by": [
+   "CVE-2022-28321"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-28321": 9.8
+  },
+  "description": {
+   "CVE-2022-28321": "The Linux-PAM package before 1.5.2-6.1 for openSUSE Tumbleweed allows authentication bypass for SSH logins. The pam_access.so module doesn't correctly restrict login if a user tries to connect from an IP address that is not resolvable via DNS. In such conditions, a user with denied access to a machine can still get access. NOTE: the relevance of this issue is largely limited to openSUSE Tumbleweed and openSUSE Factory; it does not affect Linux-PAM upstream."
+  }
+ },
+ {
+  "name": "lua-2.1.0",
+  "pname": "lua",
+  "version": "2.1.0",
+  "derivation": "/nix/store/gws3cfwvj44h5awv9m7k87hvv7p23l4j-lua-2.1.0.drv",
+  "affected_by": [
+   "CVE-2020-15888",
+   "CVE-2020-15945"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2020-15888": 8.8,
+   "CVE-2020-15945": 5.5
+  },
+  "description": {
+   "CVE-2020-15888": "Lua through 5.4.0 mishandles the interaction between stack resizes and garbage collection, leading to a heap-based buffer overflow, heap-based buffer over-read, or use-after-free.",
+   "CVE-2020-15945": "Lua through 5.4.0 has a segmentation fault in changedline in ldebug.c (e.g., when called by luaG_traceexec) because it incorrectly expects that an oldpc value is always updated upon a return of the flow of control to a function."
+  }
+ },
+ {
+  "name": "lua-5.1.5",
+  "pname": "lua",
+  "version": "5.1.5",
+  "derivation": "/nix/store/r4bhci74ksvnr3060fmdljz7kl8ig6mh-lua-5.1.5.drv",
+  "affected_by": [
+   "CVE-2020-15888",
+   "CVE-2020-15945",
+   "CVE-2021-43519"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2020-15945": 5.5,
+   "CVE-2020-15888": 8.8,
+   "CVE-2021-43519": 5.5
+  },
+  "description": {
+   "CVE-2020-15945": "Lua through 5.4.0 has a segmentation fault in changedline in ldebug.c (e.g., when called by luaG_traceexec) because it incorrectly expects that an oldpc value is always updated upon a return of the flow of control to a function.",
+   "CVE-2020-15888": "Lua through 5.4.0 mishandles the interaction between stack resizes and garbage collection, leading to a heap-based buffer overflow, heap-based buffer over-read, or use-after-free.",
+   "CVE-2021-43519": "Stack overflow in lua_resume of ldo.c in Lua Interpreter 5.1.0~5.4.4 allows attackers to perform a Denial of Service via a crafted script file."
+  }
+ },
+ {
+  "name": "lua-5.2.4",
+  "pname": "lua",
+  "version": "5.2.4",
+  "derivation": "/nix/store/9dhk6xv9riq6dsn4q2yhvjh3xmdlk1ip-lua-5.2.4.drv",
+  "affected_by": [
+   "CVE-2020-15888",
+   "CVE-2020-15945",
+   "CVE-2021-43519"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2020-15945": 5.5,
+   "CVE-2020-15888": 8.8,
+   "CVE-2021-43519": 5.5
+  },
+  "description": {
+   "CVE-2020-15945": "Lua through 5.4.0 has a segmentation fault in changedline in ldebug.c (e.g., when called by luaG_traceexec) because it incorrectly expects that an oldpc value is always updated upon a return of the flow of control to a function.",
+   "CVE-2020-15888": "Lua through 5.4.0 mishandles the interaction between stack resizes and garbage collection, leading to a heap-based buffer overflow, heap-based buffer over-read, or use-after-free.",
+   "CVE-2021-43519": "Stack overflow in lua_resume of ldo.c in Lua Interpreter 5.1.0~5.4.4 allows attackers to perform a Denial of Service via a crafted script file."
+  }
+ },
+ {
+  "name": "lua-5.2.4-env",
+  "pname": "lua",
+  "version": "5.2.4-env",
+  "derivation": "/nix/store/mjaaxhk8599hvfa1f1ik1c9qc2ig0znx-lua-5.2.4-env.drv",
+  "affected_by": [
+   "CVE-2020-15888",
+   "CVE-2020-15945",
+   "CVE-2021-43519"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2020-15945": 5.5,
+   "CVE-2020-15888": 8.8,
+   "CVE-2021-43519": 5.5
+  },
+  "description": {
+   "CVE-2020-15945": "Lua through 5.4.0 has a segmentation fault in changedline in ldebug.c (e.g., when called by luaG_traceexec) because it incorrectly expects that an oldpc value is always updated upon a return of the flow of control to a function.",
+   "CVE-2020-15888": "Lua through 5.4.0 mishandles the interaction between stack resizes and garbage collection, leading to a heap-based buffer overflow, heap-based buffer over-read, or use-after-free.",
+   "CVE-2021-43519": "Stack overflow in lua_resume of ldo.c in Lua Interpreter 5.1.0~5.4.4 allows attackers to perform a Denial of Service via a crafted script file."
+  }
+ },
+ {
+  "name": "lua-5.3.6",
+  "pname": "lua",
+  "version": "5.3.6",
+  "derivation": "/nix/store/3ibbsrlkg5dvv0b55k5qz57gbpjf84s4-lua-5.3.6.drv",
+  "affected_by": [
+   "CVE-2020-15888",
+   "CVE-2020-15945"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2020-15888": 8.8,
+   "CVE-2020-15945": 5.5
+  },
+  "description": {
+   "CVE-2020-15888": "Lua through 5.4.0 mishandles the interaction between stack resizes and garbage collection, leading to a heap-based buffer overflow, heap-based buffer over-read, or use-after-free.",
+   "CVE-2020-15945": "Lua through 5.4.0 has a segmentation fault in changedline in ldebug.c (e.g., when called by luaG_traceexec) because it incorrectly expects that an oldpc value is always updated upon a return of the flow of control to a function."
+  }
+ },
+ {
+  "name": "mercurial-6.2.3",
+  "pname": "mercurial",
+  "version": "6.2.3",
+  "derivation": "/nix/store/jkjnmblv430s6gyz0x49yz3cxdkqicln-mercurial-6.2.3.drv",
+  "affected_by": [
+   "CVE-2022-43410"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-43410": 5.3
+  },
+  "description": {
+   "CVE-2022-43410": "Jenkins Mercurial Plugin 1251.va_b_121f184902 and earlier provides information about which jobs were triggered or scheduled for polling through its webhook endpoint, including jobs the user has no permission to access."
+  }
+ },
+ {
+  "name": "mujs-1.2.0",
+  "pname": "mujs",
+  "version": "1.2.0",
+  "derivation": "/nix/store/33dnwgzmklwdwnrqm52srmvcs701ws66-mujs-1.2.0.drv",
+  "affected_by": [
+   "CVE-2017-5627",
+   "CVE-2017-5628",
+   "CVE-2022-30974",
+   "CVE-2022-30975"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-30975": 5.5,
+   "CVE-2017-5628": 7.8,
+   "CVE-2022-30974": 5.5,
+   "CVE-2017-5627": 7.8
+  },
+  "description": {
+   "CVE-2022-30975": "In Artifex MuJS through 1.2.0, jsP_dumpsyntax in jsdump.c has a NULL pointer dereference, as demonstrated by mujs-pp.",
+   "CVE-2017-5628": "An issue was discovered in Artifex Software, Inc. MuJS before 8f62ea10a0af68e56d5c00720523ebcba13c2e6a. The MakeDay function in jsdate.c does not validate the month, leading to an integer overflow when parsing a specially crafted JS file.",
+   "CVE-2022-30974": "compile in regexp.c in Artifex MuJS through 1.2.0 results in stack consumption because of unlimited recursion, a different issue than CVE-2019-11413.",
+   "CVE-2017-5627": "An issue was discovered in Artifex Software, Inc. MuJS before 4006739a28367c708dea19aeb19b8a1a9326ce08. The jsR_setproperty function in jsrun.c lacks a check for a negative array length. This leads to an integer overflow in the js_pushstring function in jsrun.c when parsing a specially crafted JS file."
+  }
+ },
+ {
+  "name": "network-3.1.2.7",
+  "pname": "network",
+  "version": "3.1.2.7",
+  "derivation": "/nix/store/f2xr6422bip4s5z9szv507l3ji5wgl3n-network-3.1.2.7.drv",
+  "affected_by": [
+   "CVE-2021-35047",
+   "CVE-2021-35048",
+   "CVE-2021-35049",
+   "CVE-2021-35050",
+   "CVE-2022-0486",
+   "CVE-2022-0997",
+   "CVE-2022-24388",
+   "CVE-2022-24389",
+   "CVE-2022-24390",
+   "CVE-2022-24391",
+   "CVE-2022-24392",
+   "CVE-2022-24393",
+   "CVE-2022-24394"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-24390": 8.8,
+   "CVE-2022-0997": 7.8,
+   "CVE-2021-35049": 8.8,
+   "CVE-2021-35048": 9.8,
+   "CVE-2021-35050": 7.5,
+   "CVE-2022-24389": 8.8,
+   "CVE-2022-24388": 8.8,
+   "CVE-2022-0486": 7.8,
+   "CVE-2022-24392": 8.8,
+   "CVE-2022-24393": 8.8,
+   "CVE-2022-24391": 8.8,
+   "CVE-2021-35047": 8.8,
+   "CVE-2022-24394": 8.8
+  },
+  "description": {
+   "CVE-2022-24390": "Vulnerability in rconfig \u201cremote_text_file\u201d enables an attacker with user level access to the CLI to inject user level commands into Fidelis Network and Deception CommandPost, Collector, Sensor, and Sandbox components as well as neighboring Fidelis components. The vulnerability is present in Fidelis Network and Deception versions prior to 9.4.5. Patches and updates are available to address this vulnerability.",
+   "CVE-2022-0997": "Improper file permissions in the CommandPost, Collector, and Sensor components of Fidelis Network and Deception enables an attacker with local, administrative access to the CLI to modify affected script files, which could result in arbitrary commands being run as root upon subsequent logon by a root user. The vulnerability is present in Fidelis Network and Deception versions prior to 9.4.5. Patches and updates are available to address this vulnerability.",
+   "CVE-2021-35049": "Vulnerability in Fidelis Network and Deception CommandPost enables authenticated command injection through the web interface. The vulnerability could allow a specially crafted HTTP request to execute system commands on the CommandPost and return results in an HTTP response in an authenticated session. The vulnerability is present in Fidelis Network and Deception versions prior to 9.3.7 and in version 9.4. Patches and updates are available to address this vulnerability.",
+   "CVE-2021-35048": "Vulnerability in Fidelis Network and Deception CommandPost enables unauthenticated SQL injection through the web interface. The vulnerability could lead to exposure of authentication tokens in some versions of Fidelis software. The vulnerability is present in Fidelis Network and Deception versions prior to 9.3.7 and in version 9.4. Patches and updates are available to address this vulnerability.",
+   "CVE-2021-35050": "User credentials stored in a recoverable format within Fidelis Network and Deception CommandPost. In the event that an attacker gains access to the CommandPost, these values could be decoded and used to login to the application. The vulnerability is present in Fidelis Network and Deception versions prior to 9.3.3. This vulnerability has been addressed in version 9.3.3 and subsequent versions.",
+   "CVE-2022-24389": "Vulnerability in rconfig \u201ccert_utils\u201d enables an attacker with user level access to the CLI to inject root level commands into Fidelis Network and Deception CommandPost, Collector, Sensor, and Sandbox components as well as neighboring Fidelis components. The vulnerability is present in Fidelis Network and Deception versions prior to 9.4.5. Patches and updates are available to address this vulnerability.",
+   "CVE-2022-24388": "Vulnerability in rconfig \u201cdate\u201d enables an attacker with user level access to the CLI to inject root level commands into Fidelis Network and Deception CommandPost, Collector, Sensor, and Sandbox components as well as neighboring Fidelis components. The vulnerability is present in Fidelis Network and Deception versions prior to 9.4.5. Patches and updates are available to address this vulnerability.",
+   "CVE-2022-0486": "Improper file permissions in the CommandPost, Collector, Sensor, and Sandbox components of Fidelis Network and Deception enables an attacker with local, administrative access to the CLI to modify affected files and enable escalation of privileges equivalent to the root user. The vulnerability is present in Fidelis Network and Deception versions prior to 9.4.5. Patches and updates are available to address this vulnerability.",
+   "CVE-2022-24392": "Vulnerability in Fidelis Network and Deception CommandPost enables authenticated command injection through the web interface using the \u201cfeed_comm_test\u201d value for the \u201cfeed\u201d parameter. The vulnerability could allow a specially crafted HTTP request to execute system commands on the CommandPost and return results in an HTTP response via an authenticated session. The vulnerability is present in Fidelis Network and Deception versions prior to 9.4.5. Patches and updates are available to address this vulnerability.",
+   "CVE-2022-24393": "Vulnerability in Fidelis Network and Deception CommandPost enables authenticated command injection through the web interface using the \u201ccheck_vertica_upgrade\u201d value for the \u201ccpIp\u201d parameter. The vulnerability could allow a specially crafted HTTP request to execute system commands on the CommandPost and return results in an HTTP response via an authenticated session. The vulnerability is present in Fidelis Network and Deception versions prior to 9.4.5. Patches and updates are available to address this vulnerability.",
+   "CVE-2022-24391": "Vulnerability in Fidelis Network and Deception CommandPost enables SQL injection through the web interface by an attacker with user level access. The vulnerability is present in Fidelis Network and Deception versions prior to 9.4.5. Patches and updates are available to address this vulnerability.",
+   "CVE-2021-35047": "Vulnerability in the CommandPost, Collector, and Sensor components of Fidelis Network and Deception enables an attacker with user level access to the CLI to inject root level commands into the component and neighboring Fidelis components. The vulnerability is present in Fidelis Network and Deception versions prior to 9.3.7 and in version 9.4. Patches and updates are available to address this vulnerability.",
+   "CVE-2022-24394": "Vulnerability in Fidelis Network and Deception CommandPost enables authenticated command injection through the web interface using the \u201cupdate_checkfile\u201d value for the \u201cfilename\u201d parameter. The vulnerability could allow a specially crafted HTTP request to execute system commands on the CommandPost and return results in an HTTP response via an authenticated session. The vulnerability is present in Fidelis Network and Deception versions prior to 9.4.5. Patches and updates are available to address this vulnerability."
+  }
+ },
+ {
+  "name": "openexr-2.5.7",
+  "pname": "openexr",
+  "version": "2.5.7",
+  "derivation": "/nix/store/522ygbw2xnvqq34lkcqgd412g5vhqn14-openexr-2.5.7.drv",
+  "affected_by": [
+   "CVE-2021-20298",
+   "CVE-2021-20304",
+   "CVE-2021-23169",
+   "CVE-2021-23215",
+   "CVE-2021-26260",
+   "CVE-2021-26945",
+   "CVE-2021-3598",
+   "CVE-2021-3605",
+   "CVE-2021-3933"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-20298": 7.5,
+   "CVE-2021-26945": 5.5,
+   "CVE-2021-3598": 5.5,
+   "CVE-2021-23169": 8.8,
+   "CVE-2021-20304": 7.5,
+   "CVE-2021-23215": 5.5,
+   "CVE-2021-3933": 5.5,
+   "CVE-2021-26260": 5.5,
+   "CVE-2021-3605": 5.5
+  },
+  "description": {
+   "CVE-2021-20298": "A flaw was found in OpenEXR's B44Compressor. This flaw allows an attacker who can submit a crafted file to be processed by OpenEXR, to exhaust all memory accessible to the application. The highest threat from this vulnerability is to system availability.",
+   "CVE-2021-26945": "An integer overflow leading to a heap-buffer overflow was found in OpenEXR in versions before 3.0.1. An attacker could use this flaw to crash an application compiled with OpenEXR.",
+   "CVE-2021-3598": "There's a flaw in OpenEXR's ImfDeepScanLineInputFile functionality in versions prior to 3.0.5. An attacker who is able to submit a crafted file to an application linked with OpenEXR could cause an out-of-bounds read. The greatest risk from this flaw is to application availability.",
+   "CVE-2021-23169": "A heap-buffer overflow was found in the copyIntoFrameBuffer function of OpenEXR in versions before 3.0.1. An attacker could use this flaw to execute arbitrary code with the permissions of the user running the application compiled against OpenEXR.",
+   "CVE-2021-20304": "A flaw was found in OpenEXR's hufDecode functionality. This flaw allows an attacker who can pass a crafted file to be processed by OpenEXR, to trigger an undefined right shift error. The highest threat from this vulnerability is to system availability.",
+   "CVE-2021-23215": "An integer overflow leading to a heap-buffer overflow was found in the DwaCompressor of OpenEXR in versions before 3.0.1. An attacker could use this flaw to crash an application compiled with OpenEXR.",
+   "CVE-2021-3933": "An integer overflow could occur when OpenEXR processes a crafted file on systems where size_t < 64 bits. This could cause an invalid bytesPerLine and maxBytesPerLine value, which could lead to problems with application stability or lead to other attack paths.",
+   "CVE-2021-26260": "An integer overflow leading to a heap-buffer overflow was found in the DwaCompressor of OpenEXR in versions before 3.0.1. An attacker could use this flaw to crash an application compiled with OpenEXR. This is a different flaw from CVE-2021-23215.",
+   "CVE-2021-3605": "There's a flaw in OpenEXR's rleUncompress functionality in versions prior to 3.0.5. An attacker who is able to submit a crafted file to an application linked with OpenEXR could cause an out-of-bounds read. The greatest risk from this flaw is to application availability."
+  }
+ },
+ {
+  "name": "openexr-2.5.8",
+  "pname": "openexr",
+  "version": "2.5.8",
+  "derivation": "/nix/store/q6fx899hyxfmazhb4zxfji7sqxlzgxra-openexr-2.5.8.drv",
+  "affected_by": [
+   "CVE-2021-23169",
+   "CVE-2021-23215",
+   "CVE-2021-26260",
+   "CVE-2021-26945",
+   "CVE-2021-3598",
+   "CVE-2021-3605",
+   "CVE-2021-3933"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-3933": 5.5,
+   "CVE-2021-23169": 8.8,
+   "CVE-2021-26945": 5.5,
+   "CVE-2021-23215": 5.5,
+   "CVE-2021-26260": 5.5,
+   "CVE-2021-3598": 5.5,
+   "CVE-2021-3605": 5.5
+  },
+  "description": {
+   "CVE-2021-3933": "An integer overflow could occur when OpenEXR processes a crafted file on systems where size_t < 64 bits. This could cause an invalid bytesPerLine and maxBytesPerLine value, which could lead to problems with application stability or lead to other attack paths.",
+   "CVE-2021-23169": "A heap-buffer overflow was found in the copyIntoFrameBuffer function of OpenEXR in versions before 3.0.1. An attacker could use this flaw to execute arbitrary code with the permissions of the user running the application compiled against OpenEXR.",
+   "CVE-2021-26945": "An integer overflow leading to a heap-buffer overflow was found in OpenEXR in versions before 3.0.1. An attacker could use this flaw to crash an application compiled with OpenEXR.",
+   "CVE-2021-23215": "An integer overflow leading to a heap-buffer overflow was found in the DwaCompressor of OpenEXR in versions before 3.0.1. An attacker could use this flaw to crash an application compiled with OpenEXR.",
+   "CVE-2021-26260": "An integer overflow leading to a heap-buffer overflow was found in the DwaCompressor of OpenEXR in versions before 3.0.1. An attacker could use this flaw to crash an application compiled with OpenEXR. This is a different flaw from CVE-2021-23215.",
+   "CVE-2021-3598": "There's a flaw in OpenEXR's ImfDeepScanLineInputFile functionality in versions prior to 3.0.5. An attacker who is able to submit a crafted file to an application linked with OpenEXR could cause an out-of-bounds read. The greatest risk from this flaw is to application availability.",
+   "CVE-2021-3605": "There's a flaw in OpenEXR's rleUncompress functionality in versions prior to 3.0.5. An attacker who is able to submit a crafted file to an application linked with OpenEXR could cause an out-of-bounds read. The greatest risk from this flaw is to application availability."
+  }
+ },
+ {
+  "name": "openssl-1.1.1q",
+  "pname": "openssl",
+  "version": "1.1.1q",
+  "derivation": "/nix/store/c0d2dmxwradqwss8nzmb331adcgfshw0-openssl-1.1.1q.drv",
+  "affected_by": [
+   "CVE-2018-16395"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2018-16395": 9.8
+  },
+  "description": {
+   "CVE-2018-16395": "An issue was discovered in the OpenSSL library in Ruby before 2.3.8, 2.4.x before 2.4.5, 2.5.x before 2.5.2, and 2.6.x before 2.6.0-preview3. When two OpenSSL::X509::Name objects are compared using ==, depending on the ordering, non-equal objects may return true. When the first argument is one character longer than the second, or the second argument contains a character that is one less than a character in the same position of the first argument, the result of == will be true. This could be leveraged to create an illegitimate certificate that may be accepted as legitimate and then used in signing or encryption operations."
+  }
+ },
+ {
+  "name": "openssl-3.0.5",
+  "pname": "openssl",
+  "version": "3.0.5",
+  "derivation": "/nix/store/v6z8a4mm5vykzf2l18him7fs1mwgy77w-openssl-3.0.5.drv",
+  "affected_by": [
+   "CVE-2022-3358",
+   "CVE-2022-3602",
+   "CVE-2022-3786"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-3602": 9.8,
+   "CVE-2022-3786": 7.5,
+   "CVE-2022-3358": 7.5
+  },
+  "description": {
+   "CVE-2022-3602": "A buffer overrun can be triggered in X.509 certificate verification, specifically in name constraint checking. Note that this occurs after certificate chain signature verification and requires either a CA to have signed the malicious certificate or for the application to continue certificate verification despite failure to construct a path to a trusted issuer. An attacker can craft a malicious email address to overflow four attacker-controlled bytes on the stack. This buffer overflow could result in a crash (causing a denial of service) or potentially remote code execution. Many platforms implement stack overflow protections which would mitigate against the risk of remote code execution. The risk may be further mitigated based on stack layout for any given platform/compiler. Pre-announcements of CVE-2022-3602 described this issue as CRITICAL. Further analysis based on some of the mitigating factors described above have led this to be downgraded to HIGH. Users are still encouraged to upgrade to a new version as soon as possible. In a TLS client, this can be triggered by connecting to a malicious server. In a TLS server, this can be triggered if the server requests client authentication and a malicious client connects. Fixed in OpenSSL 3.0.7 (Affected 3.0.0,3.0.1,3.0.2,3.0.3,3.0.4,3.0.5,3.0.6).",
+   "CVE-2022-3786": "A buffer overrun can be triggered in X.509 certificate verification, specifically in name constraint checking. Note that this occurs after certificate chain signature verification and requires either a CA to have signed a malicious certificate or for an application to continue certificate verification despite failure to construct a path to a trusted issuer. An attacker can craft a malicious email address in a certificate to overflow an arbitrary number of bytes containing the `.' character (decimal 46) on the stack. This buffer overflow could result in a crash (causing a denial of service). In a TLS client, this can be triggered by connecting to a malicious server. In a TLS server, this can be triggered if the server requests client authentication and a malicious client connects. Fixed in OpenSSL 3.0.7 (Affected 3.0.0,3.0.1,3.0.2,3.0.3,3.0.4,3.0.5,3.0.6).",
+   "CVE-2022-3358": "OpenSSL supports creating a custom cipher via the legacy EVP_CIPHER_meth_new() function and associated function calls. This function was deprecated in OpenSSL 3.0 and application authors are instead encouraged to use the new provider mechanism in order to implement custom ciphers. OpenSSL versions 3.0.0 to 3.0.5 incorrectly handle legacy custom ciphers passed to the EVP_EncryptInit_ex2(), EVP_DecryptInit_ex2() and EVP_CipherInit_ex2() functions (as well as other similarly named encryption and decryption initialisation functions). Instead of using the custom cipher directly it incorrectly tries to fetch an equivalent cipher from the available providers. An equivalent cipher is found based on the NID passed to EVP_CIPHER_meth_new(). This NID is supposed to represent the unique NID for a given cipher. However it is possible for an application to incorrectly pass NID_undef as this value in the call to EVP_CIPHER_meth_new(). When NID_undef is used in this way the OpenSSL encryption/decryption initialisation function will match the NULL cipher as being equivalent and will fetch this from the available providers. This will succeed if the default provider has been loaded (or if a third party provider has been loaded that offers this cipher). Using the NULL cipher means that the plaintext is emitted as the ciphertext. Applications are only affected by this issue if they call EVP_CIPHER_meth_new() using NID_undef and subsequently use it in a call to an encryption/decryption initialisation function. Applications that only use SSL/TLS are not impacted by this issue. Fixed in OpenSSL 3.0.6 (Affected 3.0.0-3.0.5)."
+  }
+ },
+ {
+  "name": "patch-2.7.6",
+  "pname": "patch",
+  "version": "2.7.6",
+  "derivation": "/nix/store/l4g3pl058z54xxryapncxxbfrixglsm7-patch-2.7.6.drv",
+  "affected_by": [
+   "CVE-2019-20633"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2019-20633": 5.5
+  },
+  "description": {
+   "CVE-2019-20633": "GNU patch through 2.7.6 contains a free(p_line[p_end]) Double Free vulnerability in the function another_hunk in pch.c that can cause a denial of service via a crafted patch file. NOTE: this issue exists because of an incomplete fix for CVE-2018-6952."
+  }
+ },
+ {
+  "name": "python-2.7.18",
+  "pname": "python",
+  "version": "2.7.18",
+  "derivation": "/nix/store/cx77dnm9nqvaygdkcmn5w3km11sca13p-python-2.7.18.drv",
+  "affected_by": [
+   "CVE-2017-17522",
+   "CVE-2017-18207",
+   "CVE-2019-9674",
+   "CVE-2021-3733",
+   "CVE-2022-0391",
+   "CVE-2022-26488"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2017-18207": 6.5,
+   "CVE-2021-3733": 6.5,
+   "CVE-2022-26488": 7.0,
+   "CVE-2017-17522": 8.8,
+   "CVE-2019-9674": 7.5,
+   "CVE-2022-0391": 7.5
+  },
+  "description": {
+   "CVE-2017-18207": "** DISPUTED ** The Wave_read._read_fmt_chunk function in Lib/wave.py in Python through 3.6.4 does not ensure a nonzero channel value, which allows attackers to cause a denial of service (divide-by-zero and exception) via a crafted wav format audio file. NOTE: the vendor disputes this issue because Python applications \"need to be prepared to handle a wide variety of exceptions.\"",
+   "CVE-2021-3733": "There's a flaw in urllib's AbstractBasicAuthHandler class. An attacker who controls a malicious HTTP server that an HTTP client (such as web browser) connects to, could trigger a Regular Expression Denial of Service (ReDOS) during an authentication request with a specially crafted payload that is sent by the server to the client. The greatest threat that this flaw poses is to application availability.",
+   "CVE-2022-26488": "In Python before 3.10.3 on Windows, local users can gain privileges because the search path is inadequately secured. The installer may allow a local attacker to add user-writable directories to the system search path. To exploit, an administrator must have installed Python for all users and enabled PATH entries. A non-administrative user can trigger a repair that incorrectly adds user-writable paths into PATH, enabling search-path hijacking of other users and system services. This affects Python (CPython) through 3.7.12, 3.8.x through 3.8.12, 3.9.x through 3.9.10, and 3.10.x through 3.10.2.",
+   "CVE-2017-17522": "** DISPUTED ** Lib/webbrowser.py in Python through 3.6.3 does not validate strings before launching the program specified by the BROWSER environment variable, which might allow remote attackers to conduct argument-injection attacks via a crafted URL. NOTE: a software maintainer indicates that exploitation is impossible because the code relies on subprocess.Popen and the default shell=False setting.",
+   "CVE-2019-9674": "Lib/zipfile.py in Python through 3.7.2 allows remote attackers to cause a denial of service (resource consumption) via a ZIP bomb.",
+   "CVE-2022-0391": "A flaw was found in Python, specifically within the urllib.parse module. This module helps break Uniform Resource Locator (URL) strings into components. The issue involves how the urlparse method does not sanitize input and allows characters like '\\r' and '\\n' in the URL path. This flaw allows an attacker to input a crafted URL, leading to injection attacks. This flaw affects Python versions prior to 3.10.0b1, 3.9.5, 3.8.11, 3.7.11 and 3.6.14."
+  }
+ },
+ {
+  "name": "qemu-7.1.0",
+  "pname": "qemu",
+  "version": "7.1.0",
+  "derivation": "/nix/store/zxv2wly24sh0mnh4mp5mlwr9jq6vy5b6-qemu-7.1.0.drv",
+  "affected_by": [
+   "CVE-2022-2962"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-2962": 7.8
+  },
+  "description": {
+   "CVE-2022-2962": "A DMA reentrancy issue was found in the Tulip device emulation in QEMU. When Tulip reads or writes to the rx/tx descriptor or copies the rx/tx frame, it doesn't check whether the destination address is its own MMIO address. This can cause the device to trigger MMIO handlers multiple times, possibly leading to a stack or heap overflow. A malicious guest could use this flaw to crash the QEMU process on the host, resulting in a denial of service condition."
+  }
+ },
+ {
+  "name": "quote-1.0.20",
+  "pname": "quote",
+  "version": "1.0.20",
+  "derivation": "/nix/store/1hq12x8215xpr29xawggigk67wr7zx8x-quote-1.0.20.drv",
+  "affected_by": [
+   "CVE-2020-16194"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2020-16194": 5.3
+  },
+  "description": {
+   "CVE-2020-16194": "An Insecure Direct Object Reference (IDOR) vulnerability was found in Prestashop Opart devis < 4.0.2. Unauthenticated attackers can have access to any user's invoice and delivery address by exploiting an IDOR on the delivery_address and invoice_address fields."
+  }
+ },
+ {
+  "name": "rio-0.1.22.0",
+  "pname": "rio",
+  "version": "0.1.22.0",
+  "derivation": "/nix/store/8hmg3nzn5dzp48f3s3ngvs101ja3b4ya-rio-0.1.22.0.drv",
+  "affected_by": [
+   "CVE-2020-35876"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2020-35876": 9.8
+  },
+  "description": {
+   "CVE-2020-35876": "An issue was discovered in the rio crate through 2020-05-11 for Rust. A struct can be leaked, allowing attackers to obtain sensitive information, cause a use-after-free, or cause a data race."
+  }
+ },
+ {
+  "name": "rubygems-3.2.26",
+  "pname": "rubygems",
+  "version": "3.2.26",
+  "derivation": "/nix/store/s4bahsbdgyb3a7001q36w9nsl6a7pdmj-rubygems-3.2.26.drv",
+  "affected_by": [
+   "CVE-2022-36073"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-36073": 8.8
+  },
+  "description": {
+   "CVE-2022-36073": "RubyGems.org is the Ruby community gem host. A bug in password & email change confirmation code allowed an attacker to change their RubyGems.org account's email to an unowned email address. Having access to an account whose email has been changed could enable an attacker to save API keys for that account, and when a legitimate user attempts to create an account with their email (and has to reset password to gain access) and is granted access to other gems, the attacker would then be able to publish and yank versions of those gems. Commit number 90c9e6aac2d91518b479c51d48275c57de492d4d contains a patch for this issue."
+  }
+ },
+ {
+  "name": "rubygems-3.3.20",
+  "pname": "rubygems",
+  "version": "3.3.20",
+  "derivation": "/nix/store/8y012akhx736205xbk18b9ww9s1x60sv-rubygems-3.3.20.drv",
+  "affected_by": [
+   "CVE-2022-36073"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-36073": 8.8
+  },
+  "description": {
+   "CVE-2022-36073": "RubyGems.org is the Ruby community gem host. A bug in password & email change confirmation code allowed an attacker to change their RubyGems.org account's email to an unowned email address. Having access to an account whose email has been changed could enable an attacker to save API keys for that account, and when a legitimate user attempts to create an account with their email (and has to reset password to gain access) and is granted access to other gems, the attacker would then be able to publish and yank versions of those gems. Commit number 90c9e6aac2d91518b479c51d48275c57de492d4d contains a patch for this issue."
+  }
+ },
+ {
+  "name": "safe-0.3.19",
+  "pname": "safe",
+  "version": "0.3.19",
+  "derivation": "/nix/store/d70lys10prrb3wliflvfi2ayxvkq421q-safe-0.3.19.drv",
+  "affected_by": [
+   "CVE-2019-11644",
+   "CVE-2021-33594",
+   "CVE-2021-33595",
+   "CVE-2021-33596",
+   "CVE-2021-40834",
+   "CVE-2021-40835",
+   "CVE-2021-44751",
+   "CVE-2022-28868",
+   "CVE-2022-28869",
+   "CVE-2022-28870",
+   "CVE-2022-28872",
+   "CVE-2022-28873"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-33595": 3.5,
+   "CVE-2022-28872": 8.8,
+   "CVE-2019-11644": 7.8,
+   "CVE-2021-40835": 4.3,
+   "CVE-2022-28869": 4.3,
+   "CVE-2021-33594": 3.5,
+   "CVE-2022-28873": 4.3,
+   "CVE-2022-28868": 4.3,
+   "CVE-2022-28870": 4.3,
+   "CVE-2021-33596": 4.1,
+   "CVE-2021-44751": 5.3,
+   "CVE-2021-40834": 4.3
+  },
+  "description": {
+   "CVE-2021-33595": "A address bar spoofing vulnerability was discovered in Safe Browser for iOS. Showing the legitimate URL in the address bar while loading the content from other domain. This makes the user believe that the content is served by a legit domain. A remote attacker can leverage this to perform address bar spoofing attack.",
+   "CVE-2022-28872": "A vulnerability affecting F-Secure SAFE browser was discovered. A maliciously crafted website could make a phishing attack with address bar spoofing as the address bar was not correct if navigation fails in a loop.",
+   "CVE-2019-11644": "In the F-Secure installer in F-Secure SAFE for Windows before 17.6, F-Secure Internet Security before 17.6, F-Secure Anti-Virus before 17.6, F-Secure Client Security Standard and Premium before 14.10, F-Secure PSB Workstation Security before 12.01, and F-Secure Computer Protection Standard and Premium before 19.3, a local user can escalate their privileges through a DLL hijacking attack against the installer. The installer writes the file rm.exe to C:\\Windows\\Temp and then executes it. The rm.exe process then attempts to load several DLLs from its current directory. Non-admin users are able to write to this folder, so an attacker can create a malicious C:\\Windows\\Temp\\OLEACC.dll file. When an admin runs the installer, rm.exe will execute the attacker's DLL in an elevated security context.",
+   "CVE-2021-40835": "An URL Address bar spoofing vulnerability was discovered in Safe Browser for iOS. When user clicks on a specially crafted a malicious URL, if user does not carefully pay attention to url, user may be tricked to think content may be coming from a valid domain, while it comes from another. This is performed by using a very long username part of the url so that user cannot see the domain name. A remote attacker can leverage this to perform url address bar spoofing attack. The fix is, browser no longer shows the user name part in address bar.",
+   "CVE-2022-28869": "A vulnerability affecting F-Secure SAFE browser was discovered. A maliciously crafted website could make a phishing attack with address bar spoofing as the browser did not show full URL, such as port number.",
+   "CVE-2021-33594": "An address bar spoofing vulnerability was discovered in Safe Browser for Android. When user clicks on a specially crafted a malicious URL, it appears like a legitimate one on the address bar, while the content comes from other domain and presented in a window, covering the original content. A remote attacker can leverage this to perform address bar spoofing attack.",
+   "CVE-2022-28873": "A vulnerability affecting F-Secure SAFE browser was discovered. An attacker can potentially exploit Javascript window.open functionality in SAFE Browser which could lead address bar spoofing attacks.",
+   "CVE-2022-28868": "An Address bar spoofing vulnerability was discovered in Safe Browser for Android. When user clicks on a specially crafted malicious webpage/URL, user may be tricked for a short period of time (until the page loads) to think content may be coming from a valid domain, while the content comes from the attacker controlled site.",
+   "CVE-2022-28870": "A vulnerability affecting F-Secure SAFE browser was discovered. A maliciously crafted website could make a phishing attack with address bar spoofing as the address bar was not correct if navigation fails.",
+   "CVE-2021-33596": "Showing the legitimate URL in the address bar while loading the content from other domain. This makes the user believe that the content is served by a legit domain. Exploiting the vulnerability requires the user to click on a specially crafted, seemingly legitimate URL containing an embedded malicious redirect while using F-Secure Safe Browser for iOS.",
+   "CVE-2021-44751": "A vulnerability affecting F-Secure SAFE browser was discovered. A maliciously crafted website attached with USSD code in JavaScript or iFrame can trigger dialer application from F-Secure browser which can be exploited by an attacker to send unwanted USSD messages or perform unwanted calls. In most modern Android OS, dialer application will require user interaction, however, some older Android OS may not need user interaction.",
+   "CVE-2021-40834": "A user interface overlay vulnerability was discovered in F-secure SAFE Browser for Android. When user click on a specially crafted seemingly legitimate URL SAFE browser goes into full screen and hides the user interface. A remote attacker can leverage this to perform spoofing attack."
+  }
+ },
+ {
+  "name": "samba-4.15.9",
+  "pname": "samba",
+  "version": "4.15.9",
+  "derivation": "/nix/store/vihrc6j8pl9cbf0frb1j8q4sbw2qj9iw-samba-4.15.9.drv",
+  "affected_by": [
+   "CVE-2021-3670",
+   "CVE-2022-1615",
+   "CVE-2022-32743"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-32743": 7.5,
+   "CVE-2022-1615": 5.5,
+   "CVE-2021-3670": 6.5
+  },
+  "description": {
+   "CVE-2022-32743": "Samba does not validate the Validated-DNS-Host-Name right for the dNSHostName attribute which could permit unprivileged users to write it.",
+   "CVE-2022-1615": "In Samba, GnuTLS gnutls_rnd() can fail and give predictable random values.",
+   "CVE-2021-3670": "MaxQueryDuration not honoured in Samba AD DC LDAP"
+  }
+ },
+ {
+  "name": "subversion-1.14.2",
+  "pname": "subversion",
+  "version": "1.14.2",
+  "derivation": "/nix/store/di1ph4x94rszc1gcya6j9jg3nvyvz59k-subversion-1.14.2.drv",
+  "affected_by": [
+   "CVE-2017-1000085",
+   "CVE-2018-1000111",
+   "CVE-2020-2111",
+   "CVE-2020-2304",
+   "CVE-2021-21698",
+   "CVE-2022-29046",
+   "CVE-2022-29048"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-21698": 7.5,
+   "CVE-2020-2304": 6.5,
+   "CVE-2018-1000111": 5.3,
+   "CVE-2017-1000085": 6.5,
+   "CVE-2022-29046": 5.4,
+   "CVE-2020-2111": 5.4,
+   "CVE-2022-29048": 4.3
+  },
+  "description": {
+   "CVE-2021-21698": "Jenkins Subversion Plugin 2.15.0 and earlier does not restrict the name of a file when looking up a subversion key file on the controller from an agent.",
+   "CVE-2020-2304": "Jenkins Subversion Plugin 2.13.1 and earlier does not configure its XML parser to prevent XML external entity (XXE) attacks.",
+   "CVE-2018-1000111": "An improper authorization vulnerability exists in Jenkins Subversion Plugin version 2.10.2 and earlier in SubversionStatus.java and SubversionRepositoryStatus.java that allows an attacker with network access to obtain a list of nodes and users.",
+   "CVE-2017-1000085": "Subversion Plugin connects to a user-specified Subversion repository as part of form validation (e.g. to retrieve a list of tags). This functionality improperly checked permissions, allowing any user with Item/Build permission (but not Item/Configure) to connect to any web server or Subversion server and send credentials with a known ID, thereby possibly capturing them. Additionally, this functionality did not require POST requests be used, thereby allowing the above to be performed without direct access to Jenkins via Cross-Site Request Forgery attacks.",
+   "CVE-2022-29046": "Jenkins Subversion Plugin 2.15.3 and earlier does not escape the name and description of List Subversion tags (and more) parameters on views displaying parameters, resulting in a stored cross-site scripting (XSS) vulnerability exploitable by attackers with Item/Configure permission.",
+   "CVE-2020-2111": "Jenkins Subversion Plugin 2.13.0 and earlier does not escape the error message for the Project Repository Base URL field form validation, resulting in a stored cross-site scripting vulnerability.",
+   "CVE-2022-29048": "A cross-site request forgery (CSRF) vulnerability in Jenkins Subversion Plugin 2.15.3 and earlier allows attackers to connect to an attacker-specified URL."
+  }
+ },
+ {
+  "name": "sudo-1.9.12",
+  "pname": "sudo",
+  "version": "1.9.12",
+  "derivation": "/nix/store/a8gycd1zyng40xfw2hdjvcgx8aq92gk4-sudo-1.9.12.drv",
+  "affected_by": [
+   "CVE-2022-43995"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-43995": 7.1
+  },
+  "description": {
+   "CVE-2022-43995": "Sudo 1.8.0 through 1.9.12, with the crypt() password backend, contains a plugins/sudoers/auth/passwd.c array-out-of-bounds error that can result in a heap-based buffer over-read. This can be triggered by arbitrary local users with access to Sudo by entering a password of seven characters or fewer. The impact could vary depending on the compiler and processor architecture."
+  }
+ },
+ {
+  "name": "tar-0.5.1.1",
+  "pname": "tar",
+  "version": "0.5.1.1",
+  "derivation": "/nix/store/2na1hinc88c5nj6qyfx2i82zp2c9lx0y-tar-0.5.1.1.drv",
+  "affected_by": [
+   "CVE-2018-20482",
+   "CVE-2019-9923",
+   "CVE-2021-20193",
+   "CVE-2021-32803",
+   "CVE-2021-32804",
+   "CVE-2021-37701",
+   "CVE-2021-37712",
+   "CVE-2021-37713"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-37713": 8.6,
+   "CVE-2019-9923": 7.5,
+   "CVE-2018-20482": 4.7,
+   "CVE-2021-37712": 8.6,
+   "CVE-2021-32804": 8.1,
+   "CVE-2021-20193": 5.5,
+   "CVE-2021-32803": 8.1,
+   "CVE-2021-37701": 8.6
+  },
+  "description": {
+   "CVE-2021-37713": "The npm package \"tar\" (aka node-tar) before versions 4.4.18, 5.0.10, and 6.1.9 has an arbitrary file creation/overwrite and arbitrary code execution vulnerability. node-tar aims to guarantee that any file whose location would be outside of the extraction target directory is not extracted. This is, in part, accomplished by sanitizing absolute paths of entries within the archive, skipping archive entries that contain `..` path portions, and resolving the sanitized paths against the extraction target directory. This logic was insufficient on Windows systems when extracting tar files that contained a path that was not an absolute path, but specified a drive letter different from the extraction target, such as `C:some\\path`. If the drive letter does not match the extraction target, for example `D:\\extraction\\dir`, then the result of `path.resolve(extractionDirectory, entryPath)` would resolve against the current working directory on the `C:` drive, rather than the extraction target directory. Additionally, a `..` portion of the path could occur immediately after the drive letter, such as `C:../foo`, and was not properly sanitized by the logic that checked for `..` within the normalized and split portions of the path. This only affects users of `node-tar` on Windows systems. These issues were addressed in releases 4.4.18, 5.0.10 and 6.1.9. The v3 branch of node-tar has been deprecated and did not receive patches for these issues. If you are still using a v3 release we recommend you update to a more recent version of node-tar. There is no reasonable way to work around this issue without performing the same path normalization procedures that node-tar now does. Users are encouraged to upgrade to the latest patched versions of node-tar, rather than attempt to sanitize paths themselves.",
+   "CVE-2019-9923": "pax_decode_header in sparse.c in GNU Tar before 1.32 had a NULL pointer dereference when parsing certain archives that have malformed extended headers.",
+   "CVE-2018-20482": "GNU Tar through 1.30, when --sparse is used, mishandles file shrinkage during read access, which allows local users to cause a denial of service (infinite read loop in sparse_dump_region in sparse.c) by modifying a file that is supposed to be archived by a different user's process (e.g., a system backup running as root).",
+   "CVE-2021-37712": "The npm package \"tar\" (aka node-tar) before versions 4.4.18, 5.0.10, and 6.1.9 has an arbitrary file creation/overwrite and arbitrary code execution vulnerability. node-tar aims to guarantee that any file whose location would be modified by a symbolic link is not extracted. This is, in part, achieved by ensuring that extracted directories are not symlinks. Additionally, in order to prevent unnecessary stat calls to determine whether a given path is a directory, paths are cached when directories are created. This logic was insufficient when extracting tar files that contained both a directory and a symlink with names containing unicode values that normalized to the same value. Additionally, on Windows systems, long path portions would resolve to the same file system entities as their 8.3 \"short path\" counterparts. A specially crafted tar archive could thus include a directory with one form of the path, followed by a symbolic link with a different string that resolves to the same file system entity, followed by a file using the first form. By first creating a directory, and then replacing that directory with a symlink that had a different apparent name that resolved to the same entry in the filesystem, it was thus possible to bypass node-tar symlink checks on directories, essentially allowing an untrusted tar file to symlink into an arbitrary location and subsequently extracting arbitrary files into that location, thus allowing arbitrary file creation and overwrite. These issues were addressed in releases 4.4.18, 5.0.10 and 6.1.9. The v3 branch of node-tar has been deprecated and did not receive patches for these issues. If you are still using a v3 release we recommend you update to a more recent version of node-tar. If this is not possible, a workaround is available in the referenced GHSA-qq89-hq3f-393p.",
+   "CVE-2021-32804": "The npm package \"tar\" (aka node-tar) before versions 6.1.1, 5.0.6, 4.4.14, and 3.3.2 has a arbitrary File Creation/Overwrite vulnerability due to insufficient absolute path sanitization. node-tar aims to prevent extraction of absolute file paths by turning absolute paths into relative paths when the `preservePaths` flag is not set to `true`. This is achieved by stripping the absolute path root from any absolute file paths contained in a tar file. For example `/home/user/.bashrc` would turn into `home/user/.bashrc`. This logic was insufficient when file paths contained repeated path roots such as `////home/user/.bashrc`. `node-tar` would only strip a single path root from such paths. When given an absolute file path with repeating path roots, the resulting path (e.g. `///home/user/.bashrc`) would still resolve to an absolute path, thus allowing arbitrary file creation and overwrite. This issue was addressed in releases 3.2.2, 4.4.14, 5.0.6 and 6.1.1. Users may work around this vulnerability without upgrading by creating a custom `onentry` method which sanitizes the `entry.path` or a `filter` method which removes entries with absolute paths. See referenced GitHub Advisory for details. Be aware of CVE-2021-32803 which fixes a similar bug in later versions of tar.",
+   "CVE-2021-20193": "A flaw was found in the src/list.c of tar 1.33 and earlier. This flaw allows an attacker who can submit a crafted input file to tar to cause uncontrolled consumption of memory. The highest threat from this vulnerability is to system availability.",
+   "CVE-2021-32803": "The npm package \"tar\" (aka node-tar) before versions 6.1.2, 5.0.7, 4.4.15, and 3.2.3 has an arbitrary File Creation/Overwrite vulnerability via insufficient symlink protection. `node-tar` aims to guarantee that any file whose location would be modified by a symbolic link is not extracted. This is, in part, achieved by ensuring that extracted directories are not symlinks. Additionally, in order to prevent unnecessary `stat` calls to determine whether a given path is a directory, paths are cached when directories are created. This logic was insufficient when extracting tar files that contained both a directory and a symlink with the same name as the directory. This order of operations resulted in the directory being created and added to the `node-tar` directory cache. When a directory is present in the directory cache, subsequent calls to mkdir for that directory are skipped. However, this is also where `node-tar` checks for symlinks occur. By first creating a directory, and then replacing that directory with a symlink, it was thus possible to bypass `node-tar` symlink checks on directories, essentially allowing an untrusted tar file to symlink into an arbitrary location and subsequently extracting arbitrary files into that location, thus allowing arbitrary file creation and overwrite. This issue was addressed in releases 3.2.3, 4.4.15, 5.0.7 and 6.1.2.",
+   "CVE-2021-37701": "The npm package \"tar\" (aka node-tar) before versions 4.4.16, 5.0.8, and 6.1.7 has an arbitrary file creation/overwrite and arbitrary code execution vulnerability. node-tar aims to guarantee that any file whose location would be modified by a symbolic link is not extracted. This is, in part, achieved by ensuring that extracted directories are not symlinks. Additionally, in order to prevent unnecessary stat calls to determine whether a given path is a directory, paths are cached when directories are created. This logic was insufficient when extracting tar files that contained both a directory and a symlink with the same name as the directory, where the symlink and directory names in the archive entry used backslashes as a path separator on posix systems. The cache checking logic used both `\\` and `/` characters as path separators, however `\\` is a valid filename character on posix systems. By first creating a directory, and then replacing that directory with a symlink, it was thus possible to bypass node-tar symlink checks on directories, essentially allowing an untrusted tar file to symlink into an arbitrary location and subsequently extracting arbitrary files into that location, thus allowing arbitrary file creation and overwrite. Additionally, a similar confusion could arise on case-insensitive filesystems. If a tar archive contained a directory at `FOO`, followed by a symbolic link named `foo`, then on case-insensitive file systems, the creation of the symbolic link would remove the directory from the filesystem, but _not_ from the internal directory cache, as it would not be treated as a cache hit. A subsequent file entry within the `FOO` directory would then be placed in the target of the symbolic link, thinking that the directory had already been created. These issues were addressed in releases 4.4.16, 5.0.8 and 6.1.7. The v3 branch of node-tar has been deprecated and did not receive patches for these issues. If you are still using a v3 release we recommend you update to a more recent version of node-tar. If this is not possible, a workaround is available in the referenced GHSA-9r2w-394v-53qc."
+  }
+ },
+ {
+  "name": "tar-0.5.1.1-r5.cabal",
+  "pname": "tar",
+  "version": "0.5.1.1-r5.cabal",
+  "derivation": "/nix/store/ifjg83fz037v9skmk0ayg2l25kpvvr99-tar-0.5.1.1-r5.cabal.drv",
+  "affected_by": [
+   "CVE-2018-20482",
+   "CVE-2019-9923",
+   "CVE-2021-20193",
+   "CVE-2021-32803",
+   "CVE-2021-32804",
+   "CVE-2021-37701",
+   "CVE-2021-37712",
+   "CVE-2021-37713"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-37713": 8.6,
+   "CVE-2019-9923": 7.5,
+   "CVE-2018-20482": 4.7,
+   "CVE-2021-37712": 8.6,
+   "CVE-2021-32804": 8.1,
+   "CVE-2021-20193": 5.5,
+   "CVE-2021-32803": 8.1,
+   "CVE-2021-37701": 8.6
+  },
+  "description": {
+   "CVE-2021-37713": "The npm package \"tar\" (aka node-tar) before versions 4.4.18, 5.0.10, and 6.1.9 has an arbitrary file creation/overwrite and arbitrary code execution vulnerability. node-tar aims to guarantee that any file whose location would be outside of the extraction target directory is not extracted. This is, in part, accomplished by sanitizing absolute paths of entries within the archive, skipping archive entries that contain `..` path portions, and resolving the sanitized paths against the extraction target directory. This logic was insufficient on Windows systems when extracting tar files that contained a path that was not an absolute path, but specified a drive letter different from the extraction target, such as `C:some\\path`. If the drive letter does not match the extraction target, for example `D:\\extraction\\dir`, then the result of `path.resolve(extractionDirectory, entryPath)` would resolve against the current working directory on the `C:` drive, rather than the extraction target directory. Additionally, a `..` portion of the path could occur immediately after the drive letter, such as `C:../foo`, and was not properly sanitized by the logic that checked for `..` within the normalized and split portions of the path. This only affects users of `node-tar` on Windows systems. These issues were addressed in releases 4.4.18, 5.0.10 and 6.1.9. The v3 branch of node-tar has been deprecated and did not receive patches for these issues. If you are still using a v3 release we recommend you update to a more recent version of node-tar. There is no reasonable way to work around this issue without performing the same path normalization procedures that node-tar now does. Users are encouraged to upgrade to the latest patched versions of node-tar, rather than attempt to sanitize paths themselves.",
+   "CVE-2019-9923": "pax_decode_header in sparse.c in GNU Tar before 1.32 had a NULL pointer dereference when parsing certain archives that have malformed extended headers.",
+   "CVE-2018-20482": "GNU Tar through 1.30, when --sparse is used, mishandles file shrinkage during read access, which allows local users to cause a denial of service (infinite read loop in sparse_dump_region in sparse.c) by modifying a file that is supposed to be archived by a different user's process (e.g., a system backup running as root).",
+   "CVE-2021-37712": "The npm package \"tar\" (aka node-tar) before versions 4.4.18, 5.0.10, and 6.1.9 has an arbitrary file creation/overwrite and arbitrary code execution vulnerability. node-tar aims to guarantee that any file whose location would be modified by a symbolic link is not extracted. This is, in part, achieved by ensuring that extracted directories are not symlinks. Additionally, in order to prevent unnecessary stat calls to determine whether a given path is a directory, paths are cached when directories are created. This logic was insufficient when extracting tar files that contained both a directory and a symlink with names containing unicode values that normalized to the same value. Additionally, on Windows systems, long path portions would resolve to the same file system entities as their 8.3 \"short path\" counterparts. A specially crafted tar archive could thus include a directory with one form of the path, followed by a symbolic link with a different string that resolves to the same file system entity, followed by a file using the first form. By first creating a directory, and then replacing that directory with a symlink that had a different apparent name that resolved to the same entry in the filesystem, it was thus possible to bypass node-tar symlink checks on directories, essentially allowing an untrusted tar file to symlink into an arbitrary location and subsequently extracting arbitrary files into that location, thus allowing arbitrary file creation and overwrite. These issues were addressed in releases 4.4.18, 5.0.10 and 6.1.9. The v3 branch of node-tar has been deprecated and did not receive patches for these issues. If you are still using a v3 release we recommend you update to a more recent version of node-tar. If this is not possible, a workaround is available in the referenced GHSA-qq89-hq3f-393p.",
+   "CVE-2021-32804": "The npm package \"tar\" (aka node-tar) before versions 6.1.1, 5.0.6, 4.4.14, and 3.3.2 has a arbitrary File Creation/Overwrite vulnerability due to insufficient absolute path sanitization. node-tar aims to prevent extraction of absolute file paths by turning absolute paths into relative paths when the `preservePaths` flag is not set to `true`. This is achieved by stripping the absolute path root from any absolute file paths contained in a tar file. For example `/home/user/.bashrc` would turn into `home/user/.bashrc`. This logic was insufficient when file paths contained repeated path roots such as `////home/user/.bashrc`. `node-tar` would only strip a single path root from such paths. When given an absolute file path with repeating path roots, the resulting path (e.g. `///home/user/.bashrc`) would still resolve to an absolute path, thus allowing arbitrary file creation and overwrite. This issue was addressed in releases 3.2.2, 4.4.14, 5.0.6 and 6.1.1. Users may work around this vulnerability without upgrading by creating a custom `onentry` method which sanitizes the `entry.path` or a `filter` method which removes entries with absolute paths. See referenced GitHub Advisory for details. Be aware of CVE-2021-32803 which fixes a similar bug in later versions of tar.",
+   "CVE-2021-20193": "A flaw was found in the src/list.c of tar 1.33 and earlier. This flaw allows an attacker who can submit a crafted input file to tar to cause uncontrolled consumption of memory. The highest threat from this vulnerability is to system availability.",
+   "CVE-2021-32803": "The npm package \"tar\" (aka node-tar) before versions 6.1.2, 5.0.7, 4.4.15, and 3.2.3 has an arbitrary File Creation/Overwrite vulnerability via insufficient symlink protection. `node-tar` aims to guarantee that any file whose location would be modified by a symbolic link is not extracted. This is, in part, achieved by ensuring that extracted directories are not symlinks. Additionally, in order to prevent unnecessary `stat` calls to determine whether a given path is a directory, paths are cached when directories are created. This logic was insufficient when extracting tar files that contained both a directory and a symlink with the same name as the directory. This order of operations resulted in the directory being created and added to the `node-tar` directory cache. When a directory is present in the directory cache, subsequent calls to mkdir for that directory are skipped. However, this is also where `node-tar` checks for symlinks occur. By first creating a directory, and then replacing that directory with a symlink, it was thus possible to bypass `node-tar` symlink checks on directories, essentially allowing an untrusted tar file to symlink into an arbitrary location and subsequently extracting arbitrary files into that location, thus allowing arbitrary file creation and overwrite. This issue was addressed in releases 3.2.3, 4.4.15, 5.0.7 and 6.1.2.",
+   "CVE-2021-37701": "The npm package \"tar\" (aka node-tar) before versions 4.4.16, 5.0.8, and 6.1.7 has an arbitrary file creation/overwrite and arbitrary code execution vulnerability. node-tar aims to guarantee that any file whose location would be modified by a symbolic link is not extracted. This is, in part, achieved by ensuring that extracted directories are not symlinks. Additionally, in order to prevent unnecessary stat calls to determine whether a given path is a directory, paths are cached when directories are created. This logic was insufficient when extracting tar files that contained both a directory and a symlink with the same name as the directory, where the symlink and directory names in the archive entry used backslashes as a path separator on posix systems. The cache checking logic used both `\\` and `/` characters as path separators, however `\\` is a valid filename character on posix systems. By first creating a directory, and then replacing that directory with a symlink, it was thus possible to bypass node-tar symlink checks on directories, essentially allowing an untrusted tar file to symlink into an arbitrary location and subsequently extracting arbitrary files into that location, thus allowing arbitrary file creation and overwrite. Additionally, a similar confusion could arise on case-insensitive filesystems. If a tar archive contained a directory at `FOO`, followed by a symbolic link named `foo`, then on case-insensitive file systems, the creation of the symbolic link would remove the directory from the filesystem, but _not_ from the internal directory cache, as it would not be treated as a cache hit. A subsequent file entry within the `FOO` directory would then be placed in the target of the symbolic link, thinking that the directory had already been created. These issues were addressed in releases 4.4.16, 5.0.8 and 6.1.7. The v3 branch of node-tar has been deprecated and did not receive patches for these issues. If you are still using a v3 release we recommend you update to a more recent version of node-tar. If this is not possible, a workaround is available in the referenced GHSA-9r2w-394v-53qc."
+  }
+ },
+ {
+  "name": "tcl-8.6.11",
+  "pname": "tcl",
+  "version": "8.6.11",
+  "derivation": "/nix/store/va7yzpmd4z7nxn0prcwiz15nygfxbcl6-tcl-8.6.11.drv",
+  "affected_by": [
+   "CVE-2021-35331"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-35331": 7.8
+  },
+  "description": {
+   "CVE-2021-35331": "** DISPUTED ** In Tcl 8.6.11, a format string vulnerability in nmakehlp.c might allow code execution via a crafted file. NOTE: multiple third parties dispute the significance of this finding."
+  }
+ },
+ {
+  "name": "unzip-6.0",
+  "pname": "unzip",
+  "version": "6.0",
+  "derivation": "/nix/store/jl4qmjyi86n70453l77fvxcapxvxpxcq-unzip-6.0.drv",
+  "affected_by": [
+   "CVE-2021-4217",
+   "CVE-2022-0529",
+   "CVE-2022-0530"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-4217": 7.8,
+   "CVE-2022-0529": 5.5,
+   "CVE-2022-0530": 5.5
+  },
+  "description": {
+   "CVE-2021-4217": "A flaw was found in unzip. The vulnerability occurs due to improper handling of Unicode strings, which can lead to a null pointer dereference. This flaw allows an attacker to input a specially crafted zip file, leading to a crash or code execution.",
+   "CVE-2022-0529": "A flaw was found in Unzip. The vulnerability occurs during the conversion of a wide string to a local string that leads to a heap of out-of-bound write. This flaw allows an attacker to input a specially crafted zip file, leading to a crash or code execution.",
+   "CVE-2022-0530": "A flaw was found in Unzip. The vulnerability occurs during the conversion of a wide string to a local string that leads to a heap of out-of-bound write. This flaw allows an attacker to input a specially crafted zip file, leading to a crash or code execution."
+  }
+ },
+ {
+  "name": "unzip-6.0",
+  "pname": "unzip",
+  "version": "6.0",
+  "derivation": "/nix/store/5gs1517rrs3f0sbryf9h89f80rlvf28k-unzip-6.0.drv",
+  "affected_by": [
+   "CVE-2021-4217",
+   "CVE-2022-0529",
+   "CVE-2022-0530"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-4217": 7.8,
+   "CVE-2022-0529": 5.5,
+   "CVE-2022-0530": 5.5
+  },
+  "description": {
+   "CVE-2021-4217": "A flaw was found in unzip. The vulnerability occurs due to improper handling of Unicode strings, which can lead to a null pointer dereference. This flaw allows an attacker to input a specially crafted zip file, leading to a crash or code execution.",
+   "CVE-2022-0529": "A flaw was found in Unzip. The vulnerability occurs during the conversion of a wide string to a local string that leads to a heap of out-of-bound write. This flaw allows an attacker to input a specially crafted zip file, leading to a crash or code execution.",
+   "CVE-2022-0530": "A flaw was found in Unzip. The vulnerability occurs during the conversion of a wide string to a local string that leads to a heap of out-of-bound write. This flaw allows an attacker to input a specially crafted zip file, leading to a crash or code execution."
+  }
+ },
+ {
+  "name": "vault-0.3.1.5",
+  "pname": "vault",
+  "version": "0.3.1.5",
+  "derivation": "/nix/store/3pcgrcqxakgv1mkygnmgmc64j68753lb-vault-0.3.1.5.drv",
+  "affected_by": [
+   "CVE-2018-19786",
+   "CVE-2020-13223",
+   "CVE-2020-25594",
+   "CVE-2021-27400",
+   "CVE-2021-3024",
+   "CVE-2021-38554",
+   "CVE-2021-41802",
+   "CVE-2022-41316"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2018-19786": 8.1,
+   "CVE-2021-38554": 5.3,
+   "CVE-2022-41316": 5.3,
+   "CVE-2020-25594": 5.3,
+   "CVE-2021-3024": 5.3,
+   "CVE-2021-41802": 5.4,
+   "CVE-2020-13223": 7.5,
+   "CVE-2021-27400": 7.5
+  },
+  "description": {
+   "CVE-2018-19786": "HashiCorp Vault before 1.0.0 writes the master key to the server log in certain unusual or misconfigured scenarios in which incorrect data comes from the autoseal mechanism without an error being reported.",
+   "CVE-2021-38554": "HashiCorp Vault and Vault Enterprise\u2019s UI erroneously cached and exposed user-viewed secrets between sessions in a single shared browser. Fixed in 1.8.0 and pending 1.7.4 / 1.6.6 releases.",
+   "CVE-2022-41316": "HashiCorp Vault and Vault Enterprise\u2019s TLS certificate auth method did not initially load the optionally configured CRL issued by the role's CA into memory on startup, resulting in the revocation list not being checked if the CRL has not yet been retrieved. Fixed in 1.12.0, 1.11.4, 1.10.7, and 1.9.10.",
+   "CVE-2020-25594": "HashiCorp Vault and Vault Enterprise allowed for enumeration of Secrets Engine mount paths via unauthenticated HTTP requests. Fixed in 1.6.2 & 1.5.7.",
+   "CVE-2021-3024": "HashiCorp Vault and Vault Enterprise disclosed the internal IP address of the Vault node when responding to some invalid, unauthenticated HTTP requests. Fixed in 1.6.2 & 1.5.7.",
+   "CVE-2021-41802": "HashiCorp Vault and Vault Enterprise through 1.7.4 and 1.8.3 allowed a user with write permission to an entity alias ID sharing a mount accessor with another user to acquire this other user\u2019s policies by merging their identities. Fixed in Vault and Vault Enterprise 1.7.5 and 1.8.4.",
+   "CVE-2020-13223": "HashiCorp Vault and Vault Enterprise logged proxy environment variables that potentially included sensitive credentials. Fixed in 1.3.6 and 1.4.2.",
+   "CVE-2021-27400": "HashiCorp Vault and Vault Enterprise Cassandra integrations (storage backend and database secrets engine plugin) did not validate TLS certificates when connecting to Cassandra clusters. Fixed in 1.6.4 and 1.7.1"
+  }
+ },
+ {
+  "name": "vault-0.3.1.5-r2.cabal",
+  "pname": "vault",
+  "version": "0.3.1.5-r2.cabal",
+  "derivation": "/nix/store/m8fa3lyr6xaql2nim31pwyl359h8kh6i-vault-0.3.1.5-r2.cabal.drv",
+  "affected_by": [
+   "CVE-2018-19786",
+   "CVE-2020-13223",
+   "CVE-2020-25594",
+   "CVE-2021-27400",
+   "CVE-2021-3024",
+   "CVE-2021-38554",
+   "CVE-2021-41802",
+   "CVE-2022-41316"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2018-19786": 8.1,
+   "CVE-2021-38554": 5.3,
+   "CVE-2022-41316": 5.3,
+   "CVE-2020-25594": 5.3,
+   "CVE-2021-3024": 5.3,
+   "CVE-2021-41802": 5.4,
+   "CVE-2020-13223": 7.5,
+   "CVE-2021-27400": 7.5
+  },
+  "description": {
+   "CVE-2018-19786": "HashiCorp Vault before 1.0.0 writes the master key to the server log in certain unusual or misconfigured scenarios in which incorrect data comes from the autoseal mechanism without an error being reported.",
+   "CVE-2021-38554": "HashiCorp Vault and Vault Enterprise\u2019s UI erroneously cached and exposed user-viewed secrets between sessions in a single shared browser. Fixed in 1.8.0 and pending 1.7.4 / 1.6.6 releases.",
+   "CVE-2022-41316": "HashiCorp Vault and Vault Enterprise\u2019s TLS certificate auth method did not initially load the optionally configured CRL issued by the role's CA into memory on startup, resulting in the revocation list not being checked if the CRL has not yet been retrieved. Fixed in 1.12.0, 1.11.4, 1.10.7, and 1.9.10.",
+   "CVE-2020-25594": "HashiCorp Vault and Vault Enterprise allowed for enumeration of Secrets Engine mount paths via unauthenticated HTTP requests. Fixed in 1.6.2 & 1.5.7.",
+   "CVE-2021-3024": "HashiCorp Vault and Vault Enterprise disclosed the internal IP address of the Vault node when responding to some invalid, unauthenticated HTTP requests. Fixed in 1.6.2 & 1.5.7.",
+   "CVE-2021-41802": "HashiCorp Vault and Vault Enterprise through 1.7.4 and 1.8.3 allowed a user with write permission to an entity alias ID sharing a mount accessor with another user to acquire this other user\u2019s policies by merging their identities. Fixed in Vault and Vault Enterprise 1.7.5 and 1.8.4.",
+   "CVE-2020-13223": "HashiCorp Vault and Vault Enterprise logged proxy environment variables that potentially included sensitive credentials. Fixed in 1.3.6 and 1.4.2.",
+   "CVE-2021-27400": "HashiCorp Vault and Vault Enterprise Cassandra integrations (storage backend and database secrets engine plugin) did not validate TLS certificates when connecting to Cassandra clusters. Fixed in 1.6.4 and 1.7.1"
+  }
+ },
+ {
+  "name": "vim-9.0.0609",
+  "pname": "vim",
+  "version": "9.0.0609",
+  "derivation": "/nix/store/ahpdv4n5vmx9krzbh0fw2alhd5d9f2ah-vim-9.0.0609.drv",
+  "affected_by": [
+   "CVE-2022-3352",
+   "CVE-2022-3705"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-3352": 7.8,
+   "CVE-2022-3705": 7.5
+  },
+  "description": {
+   "CVE-2022-3352": "Use After Free in GitHub repository vim/vim prior to 9.0.0614.",
+   "CVE-2022-3705": "A vulnerability was found in vim and classified as problematic. Affected by this issue is the function qf_update_buffer of the file quickfix.c of the component autocmd Handler. The manipulation leads to use after free. The attack may be launched remotely. Upgrading to version 9.0.0805 is able to address this issue. The name of the patch is d0fab10ed2a86698937e3c3fed2f10bd9bb5e731. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-212324."
+  }
+ },
+ {
+  "name": "warp-3.3.21",
+  "pname": "warp",
+  "version": "3.3.21",
+  "derivation": "/nix/store/xzka3n6ykbhss55fy93jflwq273lnk7b-warp-3.3.21.drv",
+  "affected_by": [
+   "CVE-2022-2145",
+   "CVE-2022-2225",
+   "CVE-2022-3320",
+   "CVE-2022-3512"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-2225": 7.8,
+   "CVE-2022-3512": 8.8,
+   "CVE-2022-3320": 9.8,
+   "CVE-2022-2145": 7.8
+  },
+  "description": {
+   "CVE-2022-2225": "By using warp-cli subcommands (disable-ethernet, disable-wifi), it was possible for a user without admin privileges to bypass configured Zero Trust security policies (e.g. Secure Web Gateway policies) and features such as 'Lock WARP switch'.",
+   "CVE-2022-3512": "Using warp-cli command \"add-trusted-ssid\", a user was able to disconnect WARP client and bypass the \"Lock WARP switch\" feature resulting in Zero Trust policies not being enforced on an affected endpoint.",
+   "CVE-2022-3320": "It was possible to bypass policies configured for Zero Trust Secure Web Gateway by using warp-cli 'set-custom-endpoint' subcommand. Using this command with an unreachable endpoint caused the WARP Client to disconnect and allowed bypassing administrative restrictions on a Zero Trust enrolled endpoint.",
+   "CVE-2022-2145": "Cloudflare WARP client for Windows (up to v. 2022.5.309.0) allowed creation of mount points from its ProgramData folder. During installation of the WARP client, it was possible to escalate privileges and overwrite SYSTEM protected files."
+  }
+ },
+ {
+  "name": "wayland-1.20.0",
+  "pname": "wayland",
+  "version": "1.20.0",
+  "derivation": "/nix/store/mhx3jisxxm7l5xlic3l2g1fr7c2w5dpm-wayland-1.20.0.drv",
+  "affected_by": [
+   "CVE-2021-3782"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-3782": 9.8
+  },
+  "description": {
+   "CVE-2021-3782": "An internal reference count is held on the buffer pool, incremented every time a new buffer is created from the pool. The reference count is maintained as an int; on LP64 systems this can cause the reference count to overflow if the client creates a large number of wl_shm buffer objects, or if it can coerce the server to create a large number of external references to the buffer storage. With the reference count overflowing, a use-after-free can be constructed on the wl_shm_pool tracking structure, where values may be incremented or decremented; it may also be possible to construct a limited oracle to leak 4 bytes of server-side memory to the attacking client at a time."
+  }
+ },
+ {
+  "name": "yasm-1.3.0",
+  "pname": "yasm",
+  "version": "1.3.0",
+  "derivation": "/nix/store/kg602wq6cl1fmgkifm0a3bidrd8i8nma-yasm-1.3.0.drv",
+  "affected_by": [
+   "CVE-2021-33454",
+   "CVE-2021-33455",
+   "CVE-2021-33456",
+   "CVE-2021-33457",
+   "CVE-2021-33458",
+   "CVE-2021-33459",
+   "CVE-2021-33460",
+   "CVE-2021-33461",
+   "CVE-2021-33462",
+   "CVE-2021-33463",
+   "CVE-2021-33464",
+   "CVE-2021-33465",
+   "CVE-2021-33466",
+   "CVE-2021-33467",
+   "CVE-2021-33468"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2021-33468": 5.5,
+   "CVE-2021-33459": 5.5,
+   "CVE-2021-33464": 5.5,
+   "CVE-2021-33463": 5.5,
+   "CVE-2021-33457": 5.5,
+   "CVE-2021-33461": 5.5,
+   "CVE-2021-33467": 5.5,
+   "CVE-2021-33455": 5.5,
+   "CVE-2021-33465": 5.5,
+   "CVE-2021-33456": 5.5,
+   "CVE-2021-33460": 5.5,
+   "CVE-2021-33454": 5.5,
+   "CVE-2021-33466": 5.5,
+   "CVE-2021-33462": 5.5,
+   "CVE-2021-33458": 5.5
+  },
+  "description": {
+   "CVE-2021-33468": "An issue was discovered in yasm version 1.3.0. There is a use-after-free in error() in modules/preprocs/nasm/nasm-pp.c.",
+   "CVE-2021-33459": "An issue was discovered in yasm version 1.3.0. There is a NULL pointer dereference in nasm_parser_directive() in modules/parsers/nasm/nasm-parse.c.",
+   "CVE-2021-33464": "An issue was discovered in yasm version 1.3.0. There is a heap-buffer-overflow in inc_fopen() in modules/preprocs/nasm/nasm-pp.c.",
+   "CVE-2021-33463": "An issue was discovered in yasm version 1.3.0. There is a NULL pointer dereference in yasm_expr__copy_except() in libyasm/expr.c.",
+   "CVE-2021-33457": "An issue was discovered in yasm version 1.3.0. There is a NULL pointer dereference in expand_mmac_params() in modules/preprocs/nasm/nasm-pp.c.",
+   "CVE-2021-33461": "An issue was discovered in yasm version 1.3.0. There is a use-after-free in yasm_intnum_destroy() in libyasm/intnum.c.",
+   "CVE-2021-33467": "An issue was discovered in yasm version 1.3.0. There is a use-after-free in pp_getline() in modules/preprocs/nasm/nasm-pp.c.",
+   "CVE-2021-33455": "An issue was discovered in yasm version 1.3.0. There is a NULL pointer dereference in do_directive() in modules/preprocs/nasm/nasm-pp.c.",
+   "CVE-2021-33465": "An issue was discovered in yasm version 1.3.0. There is a NULL pointer dereference in expand_mmacro() in modules/preprocs/nasm/nasm-pp.c.",
+   "CVE-2021-33456": "An issue was discovered in yasm version 1.3.0. There is a NULL pointer dereference in hash() in modules/preprocs/nasm/nasm-pp.c.",
+   "CVE-2021-33460": "An issue was discovered in yasm version 1.3.0. There is a NULL pointer dereference in if_condition() in modules/preprocs/nasm/nasm-pp.c.",
+   "CVE-2021-33454": "An issue was discovered in yasm version 1.3.0. There is a NULL pointer dereference in yasm_expr_get_intnum() in libyasm/expr.c.",
+   "CVE-2021-33466": "An issue was discovered in yasm version 1.3.0. There is a NULL pointer dereference in expand_smacro() in modules/preprocs/nasm/nasm-pp.c.",
+   "CVE-2021-33462": "An issue was discovered in yasm version 1.3.0. There is a use-after-free in expr_traverse_nodes_post() in libyasm/expr.c.",
+   "CVE-2021-33458": "An issue was discovered in yasm version 1.3.0. There is a NULL pointer dereference in find_cc() in modules/preprocs/nasm/nasm-pp.c."
+  }
+ },
+ {
+  "name": "zip-3.0",
+  "pname": "zip",
+  "version": "3.0",
+  "derivation": "/nix/store/0wjv7vgc1dmpvfbvax7hfhzv0637pkic-zip-3.0.drv",
+  "affected_by": [
+   "CVE-2018-13410"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2018-13410": 9.8
+  },
+  "description": {
+   "CVE-2018-13410": "** DISPUTED ** Info-ZIP Zip 3.0, when the -T and -TT command-line options are used, allows attackers to cause a denial of service (invalid free and application crash) or possibly have unspecified other impact because of an off-by-one error. NOTE: it is unclear whether there are realistic scenarios in which an untrusted party controls the -TT value, given that the entire purpose of -TT is execution of arbitrary commands."
+  }
+ },
+ {
+  "name": "zlib-0.6.3.0",
+  "pname": "zlib",
+  "version": "0.6.3.0",
+  "derivation": "/nix/store/sn3qpl109bpm80xfx3fzvdagnn2lp4pm-zlib-0.6.3.0.drv",
+  "affected_by": [
+   "CVE-2018-25032",
+   "CVE-2022-37434"
+  ],
+  "whitelisted": [],
+  "cvssv3_basescore": {
+   "CVE-2022-37434": 9.8,
+   "CVE-2018-25032": 7.5
+  },
+  "description": {
+   "CVE-2022-37434": "zlib through 1.2.12 has a heap-based buffer over-read or buffer overflow in inflate in inflate.c via a large gzip header extra field. NOTE: only applications that call inflateGetHeader are affected. Some common applications bundle the affected zlib source code but may be unable to call inflateGetHeader (e.g., see the nodejs/node reference).",
+   "CVE-2018-25032": "zlib before 1.2.12 allows memory corruption when deflating (i.e., when compressing) if the input has many distant matches."
+  }
+ }
+]

@@ -56,6 +56,9 @@ const (
 	// Alpine is
 	Alpine = "alpine"
 
+	// NixOS is
+	NixOS = "nixos"
+
 	// ServerTypePseudo is used for ServerInfo.Type, r.Family
 	ServerTypePseudo = "pseudo"
 
