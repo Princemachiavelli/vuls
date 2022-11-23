@@ -287,6 +287,12 @@ func setDefaultIfEmpty(server *ServerInfo) error {
 		}
 	}
 
+	if server.FindLockRoot == "" {
+		server.FindLockRoot = Conf.Default.FindLockRoot
+		if server.FindLockRoot == "" {
+			server.FindLockRoot = "/"
+		}
+	}
 	if server.PortScan == nil {
 		server.PortScan = Conf.Default.PortScan
 		if server.PortScan == nil {

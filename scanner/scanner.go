@@ -783,6 +783,14 @@ func (s Scanner) detectOS(c config.ServerInfo) osTypeInterface {
 		logging.Log.Debugf("Alpine. Host: %s:%s", c.Host, c.Port)
 		return osType
 	}
+	
+	if itsMe, osType, fatalErr := detectNixOS(c); fatalErr != nil {
+		osType.setErrs([]error{xerrors.Errorf("Failed to detect OS: %w", fatalErr)})
+		return osType
+	} else if itsMe {
+		logging.Log.Debugf("NixOS. Host: %s:%s", c.Host, c.Port)
+		return osType
+	}
 
 	osType := &unknown{base{ServerInfo: c}}
 	osType.setErrs([]error{xerrors.New("Unknown OS Type")})

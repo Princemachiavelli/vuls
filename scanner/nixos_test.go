@@ -3,15 +3,13 @@ package scanner
 import (
 	"reflect"
 	"testing"
-
 	"github.com/future-architect/vuls/config"
-	"github.com/future-architect/vuls/models"
 )
 
 func TestParseVulnixJSON(t *testing.T) {
 	var tests = []struct {
 		in    string
-		packs models.Packages
+		vulnixRslt []auditResult
 	}{
 		{
 			in: `
@@ -49,26 +47,49 @@ func TestParseVulnixJSON(t *testing.T) {
   }
  }
 ]`,
-			packs: models.Packages{
-				"Nuget": {
-					Name:    "Nuget",
-					Version: "5.6.0.6489",
-				},
-				"SDL_ttf": {
-					Name:	"SDL_ttf",
-					Version: "2.0.11",
-				},
+vulnixRslt: []auditResult{
+	    auditResult{
+		Name: "Nuget-5.6.0.6489",
+		Pname: "Nuget",
+		Version: "5.6.0.6489",
+		Derivation: "/nix/store/lhn0ziasnffvlcqnmsk3jdnqfvpy8rwg-Nuget-5.6.0.6489.drv",
+		AffectedBy: []string{"CVE-2022-30184"},
+		Whitelisted: []string{},
+		Cvssv3Basescore: map[string]float64{
+			"CVE-2022-30184": 5.5,
 			},
+		Description: map[string]string {
+			"CVE-2022-30184": ".NET and Visual Studio Information Disclosure Vulnerability.",
+			},
+	    },
+	    auditResult{
+		Name: "SDL_ttf-2.0.11",
+		Pname: "SDL_ttf",
+		Version: "2.0.11",
+		Derivation: "/nix/store/y2pzzzp4qyhsm3rkhww1mbchm2641p1c-SDL_ttf-2.0.11.drv",
+		AffectedBy: []string{"CVE-2022-27470"},
+		Whitelisted: []string{},
+		Cvssv3Basescore: map[string]float64 {
+			"CVE-2022-27470": 7.8,
 		},
-	}
+		Description: map[string]string {
+			"CVE-2022-27470": "SDL_ttf v2.0.18 and below was discovered to contain an arbitrary memory write via the function TTF_RenderText_Solid(). This vulnerability is triggered via a crafted TTF file.",
+		},
+	    },
+       },
+   },
+}
 	d := newNixOS(config.ServerInfo{})
 	for i, tt := range tests {
-		pkgs, _ := d.parseVulnix(tt.in)
-		if !reflect.DeepEqual(tt.packs, pkgs) {
-			t.Errorf("[%d] expected %v, actual %v", i, tt.packs, pkgs)
+		vulnixRslt , err := d.parseVulnix(tt.in)
+		if err != nil {
+			t.Errorf("Failed to parse vulnix output: %s", err)
+		}
+		if !reflect.DeepEqual(tt.vulnixRslt, vulnixRslt) {
+			t.Errorf("[%d] expected %v, actual %v", i, tt.vulnixRslt, vulnixRslt)
 		}
 	}
 }
 
 // test nix-store -q --references /$profile_path
-func TestParseNixOSPackages(t *testing.T) {}
+//func TestParseNixOSPackages(t *testing.T) {}

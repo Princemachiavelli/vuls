@@ -655,6 +655,7 @@ func TestEOL_IsStandardSupportEnded(t *testing.T) {
 			extEnded: true,
 			found:    true,
 		},
+		// NixOS
 		{
 			name:     "Windows 10 Version 22H2 supported",
 			fields:   fields{family: Windows, release: "Windows 10 Version 22H2 for x64-based Systems"},
@@ -677,6 +678,14 @@ func TestEOL_IsStandardSupportEnded(t *testing.T) {
 			now:      time.Date(2023, 6, 4, 23, 59, 59, 0, time.UTC),
 			stdEnded: false,
 			extEnded: false,
+			found:    true,
+		},
+		{
+			name:     "NixOS 22.11 eol on 2023-05-30",
+			fields:   fields{family: NixOS, release: "22.11"},
+			now:      time.Date(2023, 6, 1, 23, 59, 59, 0, time.UTC),
+			stdEnded: true,
+			extEnded: true,
 			found:    true,
 		},
 	}

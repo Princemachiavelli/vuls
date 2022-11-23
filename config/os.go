@@ -402,14 +402,16 @@ func GetEOL(family, release string) (eol EOL, found bool) {
 		default:
 		}
 	case constant.NixOS:
+		// https://endoflife.date/nixos
 		eol, found = map[string]EOL{
 			"21.05": {Ended: true},
 			"21.11": {Ended: true},
-			"22.05": {StandardSupportUntil: time.Date(2022, 11, 30, 23, 59, 59, 0, time.UTC)},
+			"22.05": {Ended: true},
 			"22.11": {StandardSupportUntil: time.Date(2023, 5, 30, 23, 59, 59, 0, time.UTC)},
 			"23.05": {StandardSupportUntil: time.Date(2023, 11, 30, 23, 59, 59, 0, time.UTC)},
 			"23.11": {StandardSupportUntil: time.Date(2024, 5, 30, 23, 59, 59, 0, time.UTC)},
-		}[release]
+		}[majorDotMinor(release)]
+
 	}
 	return
 }
