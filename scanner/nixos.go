@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"regexp"
 	"strings"
+	"path/filepath"
 
 	"github.com/future-architect/vuls/config"
 	"github.com/future-architect/vuls/constant"
@@ -50,6 +51,25 @@ func detectNixOS(c config.ServerInfo) (bool, osTypeInterface, error) {
 	return false, nil, nil
 }
 
+// nixos-upgrade.service
+func(o *nixos) rebootRequired() (bool, error) {
+	files := []string{"initrd", "kernel", "kernel-modules"}
+	for _,f := range files {
+		booted, err := filepath.EvalSymlinks("/run/booted-system/" + f)
+		if err != nil {
+			return false, err
+		}
+		built, err := filepath.EvalSymlinks("/nix/var/nix/profiles/system/" + f)
+		if err != nil {
+			return false, err
+		}
+		if booted != built {
+			return true, nil
+		}
+	}
+	return false, nil
+}
+
 func (o *nixos) checkScanMode() error {
 	if o.getServerInfo().Mode.IsOffline() {
 		return xerrors.New("Remove offline scan mode, NixOS needs internet connection")
@@ -69,7 +89,8 @@ func (o *nixos) checkIfSudoNoPasswd() error {
 }
 
 func (o *nixos) scanInstalledPackages() (models.Packages, error) {
-	cmd := util.PrependProxyEnv("nix-store -q --references /var/run/current-system/sw")
+	//cmd := util.PrependProxyEnv("nix-store -q --references /var/run/current-system/sw")
+	cmd := util.PrependProxyEnv("nix-store --gc --print-live")
 	r := o.exec(cmd, noSudo)
 	if !r.isSuccess() {
 		return nil, xerrors.Errorf("Failed to SSH: %s", r)
@@ -81,8 +102,17 @@ func (o *nixos) scanInstalledPackages() (models.Packages, error) {
 func (o *nixos) parseInstalledPackages(stdout string) (models.Packages, models.SrcPackages, error) {
 	packs := models.Packages{}
 	lines := strings.Split(stdout, "\n")
+	ignoreExt = []string{'.tar.gz', '.tar.bz2', '.tar.xz', '.tar.lz', '.tgz', '.zip', '.gem',
+    '.patch', '.patch.gz', '.patch.xz', '.diff'}
 	re := regexp.MustCompile(`^(\S+?)-(?P<name>\S+?)-(?P<version>[0-9]\S*)$`)
 	for _, l := range lines {
+		for _,e := range ignoreExt {
+			if strings.HasSuffix(l, e) {
+				continue
+			} 
+		}
+		if strings.HasSuffix(l, '.drv')
+		l = l[:len(l)-4]
 		result := re.FindStringSubmatch(l)
 		if len(result) < 3 {
 			o.log.Infof("Failed to parse store path: %s", l)
@@ -151,19 +181,17 @@ func (o *nixos) scanUnsecurePackages() (models.VulnInfos, error) {
 
 	vulnixRsltPkgs := []nixAuditResult{}
 	for _, r := range vulnixRslt {
-		name := r.Pname
-		cveIDs := r.AffectedBy
-		if name == "" || len(cveIDs) == 0 {
+		if r.Pname == "" || len(r.AffectedBy) == 0 {
+			o.log.Errorf("Unknown/incomplete package info %s", r.Name)
 			continue
 		}
-		// TODO: change to getting package name and version from vulnix instead
-		pack, found := o.Packages[r.Name]
-		if !found {
-			return nil, xerrors.Errorf("Vulnerable package: %s is not found", name)
+		pack := models.Package{
+			Name:    r.Pname,
+			Version: r.Version,
 		}
 		vulnixRsltPkgs = append(vulnixRsltPkgs, nixAuditResult{
 			pack:   pack,
-			cveIDs: cveIDs,
+			cveIDs: r.AffectedBy,
 		})
 
 	}
@@ -244,7 +272,11 @@ func (o *nixos) scanPackages() error {
 	}
 
 	//TODO: check if reboot is required
-	//o.Kernel.RebootRequired, err = o.rebootRequired()
+	o.Kernel.RebootRequired, err = o.rebootRequired()
+	if err != nil {
+		o.log.Errorf("Failed to check if reboot is required: %s", err)
+		return err
+	}
 
 	// Installed Packages
 	installed, err := o.scanInstalledPackages()
