@@ -102,8 +102,8 @@ func (o *nixos) scanInstalledPackages() (models.Packages, error) {
 func (o *nixos) parseInstalledPackages(stdout string) (models.Packages, models.SrcPackages, error) {
 	packs := models.Packages{}
 	lines := strings.Split(stdout, "\n")
-	ignoreExt = []string{'.tar.gz', '.tar.bz2', '.tar.xz', '.tar.lz', '.tgz', '.zip', '.gem',
-    '.patch', '.patch.gz', '.patch.xz', '.diff'}
+	ignoreExt := []string{".tar.gz", ".tar.bz2", ".tar.xz", ".tar.lz", ".tgz", ".zip", ".gem",
+    ".patch", ".patch.gz", ".patch.xz", ".diff"}
 	re := regexp.MustCompile(`^(\S+?)-(?P<name>\S+?)-(?P<version>[0-9]\S*)$`)
 	for _, l := range lines {
 		for _,e := range ignoreExt {
@@ -111,8 +111,9 @@ func (o *nixos) parseInstalledPackages(stdout string) (models.Packages, models.S
 				continue
 			} 
 		}
-		if strings.HasSuffix(l, '.drv')
-		l = l[:len(l)-4]
+		if strings.HasSuffix(l, ".drv"){
+			l = l[:len(l)-4]
+		}
 		result := re.FindStringSubmatch(l)
 		if len(result) < 3 {
 			o.log.Infof("Failed to parse store path: %s", l)
@@ -152,8 +153,8 @@ type nixAuditResult struct {
 	cveIDs []string
 }
 
-func (o *nixos) parseVulnix(i string) ([]auditResult, error) {
-	data := []byte(i)
+func (o *nixos) parseVulnix(vulnixJson string) ([]auditResult, error) {
+	data := []byte(vulnixJson)
 	vulnixRslt := []auditResult{}
 	err := json.Unmarshal(data, &vulnixRslt)
 	if err != nil {
