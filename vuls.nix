@@ -2,8 +2,8 @@
 
 buildGoModule rec {
   pname = "vuls";
-  version = "0.22.1";
+  version = "0.23.2";
   src = lib.cleanSource ./.;
-  vendorSha256 = "sha256-kPWk54w3za9j1bQSKsYejyoE+xhhJ7/FM3pUVPjxAWE=";
+  vendorSha256 = "sha256-jBZCcmPo9R6dUdL9e20Nyzd/U2Bz2FP63D1ORBwmSaE=";
   proxyVendor = true;
 }
