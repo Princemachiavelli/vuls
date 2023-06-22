@@ -82,15 +82,13 @@ func (o *nixos) checkDeps() error {
 	return nil
 }
 
-// Not sure if we need Sudo on NixOS
 func (o *nixos) checkIfSudoNoPasswd() error {
 	o.log.Infof("sudo ... No need")
 	return nil
 }
 
 func (o *nixos) scanInstalledPackages() (models.Packages, error) {
-	//cmd := util.PrependProxyEnv("nix-store -q --references /var/run/current-system/sw")
-	cmd := util.PrependProxyEnv("nix-store --gc --print-live")
+	cmd := util.PrependProxyEnv("nix-store --query --requisites /run/current-system")
 	r := o.exec(cmd, noSudo)
 	if !r.isSuccess() {
 		return nil, xerrors.Errorf("Failed to SSH: %s", r)
@@ -105,28 +103,30 @@ func (o *nixos) parseInstalledPackages(stdout string) (models.Packages, models.S
 	ignoreExt := []string{".tar.gz", ".tar.bz2", ".tar.xz", ".tar.lz", ".tgz", ".zip", ".gem",
     ".patch", ".patch.gz", ".patch.xz", ".diff"}
 	re := regexp.MustCompile(`^(\S+?)-(?P<name>\S+?)-(?P<version>[0-9]\S*)$`)
-	for _, l := range lines {
-		for _,e := range ignoreExt {
-			if strings.HasSuffix(l, e) {
+	PathLoop:
+		for _, l := range lines {
+			for _,e := range ignoreExt {
+				if strings.HasSuffix(l, e) {
+					o.log.Infof("Ignoring store path with archive extension: %s", l)
+					continue PathLoop
+				}
+			}
+			if strings.HasSuffix(l, ".drv"){
+				l = l[:len(l)-4]
+			}
+			result := re.FindStringSubmatch(l)
+			if len(result) < 3 {
+				o.log.Infof("Failed to parse store path: %s", l)
 				continue
-			} 
+			}
+			//name := strings.ToLower(result[2])
+			name := result[2]
+			ver := result[3]
+			packs[name] = models.Package{
+				Name:    name,
+				Version: ver,
+			}
 		}
-		if strings.HasSuffix(l, ".drv"){
-			l = l[:len(l)-4]
-		}
-		result := re.FindStringSubmatch(l)
-		if len(result) < 3 {
-			o.log.Infof("Failed to parse store path: %s", l)
-			continue
-		}
-		//name := strings.ToLower(result[2])
-		name := result[2]
-		ver := result[3]
-		packs[name] = models.Package{
-			Name:    name,
-			Version: ver,
-		}
-	}
 	return packs, nil, nil
 }
 
